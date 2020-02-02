@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Tier 1 Sniper Rifles ========================== -->
+
+  <!-- ==================== Scout Rifle T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_ScoutRifle_ANLA</defName>
+    <label>scout rifle</label>
+    <description>A light weight long-ranged small &amp; medium game hunting rifle. It is an accurate sniper weapon, making it a good weapon for hunting and sniping targets.</description>
+    <graphicData>
+      <texPath>Weapons/SniperRifles/ScoutRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SniperTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>24000</WorkToMake>
+      <Mass>5.2</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.74</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_ScoutRifle</defaultProjectile>
+        <warmupTime>1.75</warmupTime>
+        <range>39.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+	  <li>TownHunter_ANLA</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SRifles_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_ScoutRifle</defName>
+    <label>scout rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>1.2</stoppingPower>
+      <speed>77</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Tier 2 Sniper Rifles ========================== -->
+  
+  <!-- ==================== Recon Rifle T2 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_ReconRifle_ANLA</defName>
+    <label>recon rifle</label>
+    <description>A bolt-action reconnaissance police or military scout rifle. It has more range than the scout rifle &amp; has better armor penetration, but with a lower rate of fire.</description>
+    <graphicData>
+      <texPath>Weapons/SniperRifles/ReconRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.7</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SniperTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>26500</WorkToMake>
+      <Mass>5.4</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.78</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>72</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_ReconRifle</defaultProjectile>
+        <warmupTime>1.95</warmupTime>
+        <range>44.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SRifles_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_ReconRifle</defName>
+    <label>recon rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+      <stoppingPower>1.4</stoppingPower>
+      <speed>84</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Long Rifle T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_LongRifle_ANLA</defName>
+    <label>long rifle</label>
+    <description>An ancient long-barreled rifle with magnified telescopic sights. It has high range &amp; is very accurate. Great at shooting from a great distance for sniping.\n\nHowever when in close range, other weapons can outclass it.</description>
+    <graphicData>
+      <texPath>Weapons/SniperRifles/LongRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.4</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SniperTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>33000</WorkToMake>
+      <Mass>6.0</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.88</AccuracyMedium>
+      <AccuracyLong>0.86</AccuracyLong>
+      <RangedWeapon_Cooldown>2.32</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_LongRifle</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>47.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+	  <li>ChiefThunderstick_ANLA</li>
+	  <li>TownHunter_ANLA</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SRifles_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_LongRifle</defName>
+    <label>long rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>19</damageAmountBase>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== DMR Marksman Bullpup T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_DMRBullpup_ANLA</defName>
+    <label>DMR bullpup</label>
+    <description>A compact semi-automatic designated marksman bullpup rifle. Has less range than other sniper rifles &amp; has low a damage output. But is quick to fire, and has decent armor penetration.</description>
+    <graphicData>
+      <texPath>Weapons/SniperRifles/BullpupMarksman</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.5</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SniperTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>26500</WorkToMake>
+      <Mass>5.0</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.66</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.54</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_BullpupDMR</defaultProjectile>
+        <warmupTime>1.4</warmupTime>
+        <range>35.9</range>
+        <soundCast>ANLAShot_DMRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SRifles_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_BullpupDMR</defName>
+    <label>DMR bullpup bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Sniper Rifle T2 ========================== -->
+  
+  <!-- ==================== DMR Rifle T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_DMRRifle_ANLA</defName>
+    <label>DMR rifle</label>
+    <description>An ancient pattern semi-automatic designated marksman rifle. It has long range suited for long-ranged support. Lacks strong firepower seen in most sniper rifles.</description>
+    <graphicData>
+      <texPath>Weapons/SniperRifles/DMRSniper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.6</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SniperTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>26500</WorkToMake>
+      <Mass>7.5</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.63</AccuracyLong>
+      <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_DMRRifle</defaultProjectile>
+        <warmupTime>1.46</warmupTime>
+        <range>43.9</range>
+        <soundCast>ANLAShot_DMRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+	  <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.65</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SRifles_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_DMRRifle</defName>
+    <label>DMR rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>83</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  <!-- ==================== Tier 3 Sniper Rifles ========================== -->
+  
+  <!-- ==================== Precision Rifle T3 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_PrecisionRifle_ANLA</defName>
+    <label>precision rifle</label>
+    <description>A semi-automatic special police pattern sniper rifle. Has long range and decent accuracy, its slightly stronger than the DMR rifle, but still lacks strong firepower.</description>
+    <graphicData>
+      <texPath>Weapons/SniperRifles/PrecisionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.5</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SniperTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>26500</WorkToMake>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.77</AccuracyMedium>
+      <AccuracyLong>0.68</AccuracyLong>
+      <RangedWeapon_Cooldown>1.68</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>88</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_PrecisionRifle</defaultProjectile>
+        <warmupTime>1.56</warmupTime>
+        <range>44.9</range>
+        <soundCast>ANLAShot_DMRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.75</cooldownTime>
+      </li>
+	  <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SRifles_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_PrecisionRifle</defName>
+    <label>precision rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1.2</stoppingPower>
+	  <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Magnum Sniper Rifle T3 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_MagnumSniperRifle_ANLA</defName>
+    <label>magnum sniper rifle</label>
+    <description>A heavy &amp; a more powerful military sniper rifle chambered with magnum rounds. It has less accuracy than the sniper rifle &amp; is slower to fire, however its damage is higher.</description>
+    <graphicData>
+      <texPath>Weapons/SniperRifles/MagnumSniper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.4</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SniperTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.78</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>95</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_MagnumSniperRifle</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>44.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.8</power>
+        <cooldownTime>2.68</cooldownTime>
+      </li>
+    </tools>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SRifles_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_MagnumSniperRifle</defName>
+    <label>sniper rifle magnum</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+	  <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 4 Sniper Rifles ========================== -->
+
+  <!-- ==================== Anti-Materiel Rifle T4 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_AntiMaterielRifle_ANLA</defName>
+    <label>anti-materiel rifle</label>
+    <description>A powerful sniper rifle with extreme range that fires high-velocity plasteel cartridges capable of damaging any surface. With high tremendous power, able to penetrate most types of armor, its super effective with an experienced shooter.\n\nHowever its super heavy &amp; very slow to fire, putting it in a disadvantage with other weapons &amp; melee fighters at close range.</description>
+    <graphicData>
+      <texPath>Weapons/SniperRifles/AntiMaterielRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SniperTierIII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>112000</WorkToMake>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.76</AccuracyShort>
+      <AccuracyMedium>0.76</AccuracyMedium>
+      <AccuracyLong>0.73</AccuracyLong>
+      <RangedWeapon_Cooldown>4.45</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+	  <Plasteel>125</Plasteel>
+      <ComponentIndustrial>16</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_AntiMaterielRifle</defaultProjectile>
+        <warmupTime>5.0</warmupTime>
+        <range>54.9</range>
+        <soundCast>ANLAShot_AntiMaterielRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+    </tools>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.5</MoveSpeed>
+    </equippedStatOffsets>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SRifles_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_AntiMaterielRifle</defName>
+    <label>anti-materiel rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>75</damageAmountBase>
+      <stoppingPower>5.0</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Tier 2.5: Modernization & Advancements ===================================-->
+
+  <!--===== Column 1 ====-->
+  
+  <ResearchProjectDef>
+	<defName>Resarch_MachineGunTierI_ANLA</defName>
+	<label>belt-fed machine guns</label>
+	<description>By making use of belt-fed mechanisms, you can build stronger machine guns that can fire even more bullets in bursts for heavy support.</description>
+	<baseCost>1200</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>4</researchViewX>
+	<researchViewY>1.8</researchViewY>
+	<prerequisites>
+	  <li>GasOperation</li>
+      <li>Resarch_RifleTierII_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_SniperTierII_ANLA</defName>
+	<label>sniper rifles</label>
+	<description>Build and craft stronger sniper rifles and designated marksman rifles, they are faster to fire while stronger sniper rifles are slower in firing but retaining long range or medium range sniping.</description>
+	<baseCost>850</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>4</researchViewX>
+	<researchViewY>0.6</researchViewY>
+	<prerequisites>
+      <li>Resarch_SniperTierI_ANLA</li>
+	  <li>PrecisionRifling</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_RocketLaunchersTierI_ANLA</defName>
+	<label>rocket launchers</label>
+	<description>learn the use of making and assembling single-use rocket launchers that can destroy or heavily damage structures and centipedes or large groups of enemies and also build rocket-propelled grenade launchers.</description>
+	<baseCost>1800</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>5</researchViewX>
+	<researchViewY>3.6</researchViewY>
+	<prerequisites>
+      <li>Resarch_ExplosivesRangedTierII_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <!--===== Column 2 ====-->
+  
+  <ResearchProjectDef>
+	<defName>Resarch_SubmachineGunsTierII_ANLA</defName>
+	<label>SMG large magazines</label>
+	<description>Make use of larger magazines which holds more ammo to fire more rounds or for more damaging larger bullets for the submachine guns in the modern gunsmith's table.</description>
+	<baseCost>800</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>3</researchViewX>
+	<researchViewY>1.8</researchViewY>
+	<prerequisites>
+      <li>Resarch_SubmachineGunsTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_RifleTierII_ANLA</defName>
+	<label>heavy barrels</label>
+	<description>By using heavier barrels, we can build stronger &amp; more damaging rifles and firearms such as battle rifles and double barreled shotguns.</description>
+	<baseCost>900</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>3</researchViewX>
+	<researchViewY>1.2</researchViewY>
+	<prerequisites>
+      <li>Resarch_RiflesTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_ShotgunsTierII_ANLA</defName>
+	<label>automatic shotguns</label>
+	<description>Allow construction of automatic shotguns like chain shotguns that fires more pellets and more damaging shots in bursts.</description>
+	<baseCost>1300</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>4</researchViewX>
+	<researchViewY>2.4</researchViewY>
+	<prerequisites>
+	  <li>GasOperation</li>
+      <li>Resarch_ShotgunsTierI_ANLA</li>
+	  <li>Resarch_RifleTierII_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_GrenadesTierII_ANLA</defName>
+	<label>advanced grenades</label>
+	<description>Craft more deadlier grenades such as High-explosive and Incendiary grenades in the machining table.</description>
+	<baseCost>900</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>2</researchViewX>
+	<researchViewY>3.6</researchViewY>
+	<prerequisites>
+      <li>Resarch_GrenadesTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  
+  <ResearchProjectDef>
+	<defName>Resarch_ExplosivesRangedTierII_ANLA</defName>
+	<label>grenade launchers</label>
+	<description>Build grenade launchers to fire from a distance to blast enemies taking cover by crafting them in the modern gunsmith's table like riot grenade launchers and the good old classic grenade launcher.</description>
+	<baseCost>1600</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>3</researchViewX>
+	<researchViewY>3.0</researchViewY>
+	<prerequisites>
+	  <li>Resarch_ExplosivesRangedTierI_ANLA</li>
+      <li>Resarch_GrenadesTierII_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <!--===== Melee ====-->
+  
+  <ResearchProjectDef>
+	<defName>Resarch_MeleeBladeAndSpearsTierII_ANLA</defName>
+	<label>long blades &amp; spears</label>
+	<description>Make more refined and stronger blades for swords and other bladed weapons such as knives and more powerful polearms in the smithy.</description>
+	<baseCost>750</baseCost>
+	<techLevel>Medieval</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>1</researchViewX>
+	<researchViewY>4.2</researchViewY>
+	<prerequisites>
+      <li>Resarch_MeleeBladeTierI_ANLA</li>
+	  <li>Resarch_MeleeSpearTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_MeleeAxesTierI_ANLA</defName>
+	<label>cleaving weapons</label>
+	<description>Make cleaving melee weapons such as axes and the kopides, which have an a higher chance and an ability of hitting multiple limbs.</description>
+	<baseCost>1000</baseCost>
+	<techLevel>Medieval</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>1</researchViewX>
+	<researchViewY>5.2</researchViewY>
+	<prerequisites>
+      <li>Resarch_MeleeBladeTierI_ANLA</li>
+	  <li>Resarch_MeleeBluntTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_MeleeBluntTierII_ANLA</defName>
+	<label>brute force weapons</label>
+	<description>Make harder to hit blunt instruments in the smithy, as they are more powerful and have increased lethality.</description>
+	<baseCost>750</baseCost>
+	<techLevel>Medieval</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>1</researchViewX>
+	<researchViewY>4.7</researchViewY>
+	<prerequisites>
+      <li>Resarch_MeleeBluntTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</Defs>

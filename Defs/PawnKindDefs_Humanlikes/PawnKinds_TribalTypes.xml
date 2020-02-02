@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="TribalBase">
+    <defName>Tribal_Thunderer_ANLA</defName>
+    <label>thunderer gunner</label>
+    <combatPower>90</combatPower>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>550</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_PlateHelmet_ANLA</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>200</min>
+      <max>600</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MedievalLongFirearms_ANLA</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TribalBase">
+    <defName>Tribal_Skirmisher_ANLA</defName>
+    <label>skirmisher</label>
+    <combatPower>45</combatPower>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>200</min>
+      <max>500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>200</min>
+      <max>600</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicSkirmisherRanged_ANLA</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+  <PawnKindDef ParentName="TribalChiefBase">
+		<defName>Tribal_ChiefRangedGun_ANLA</defName>
+		<label>thunderstick chief</label>
+		<weaponMoney>
+            <min>700</min>
+            <max>900</max>
+        </weaponMoney>
+		<apparelRequired Inherit="False">
+            <li>Apparel_PlateHelmet_ANLA</li>
+			<li>Apparel_PlateArmor</li>
+        </apparelRequired>
+		<canBeSapper>false</canBeSapper>
+		<weaponTags>
+		    <li>ChiefThunderstick_ANLA</li>
+		</weaponTags>
+	</PawnKindDef>
+
+
+</Defs>

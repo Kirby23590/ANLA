@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="CutBase">
+    <defName>ANLA_AxeCut</defName>
+    <deathMessage>{0} has been chopped to death.</deathMessage>
+	<hediff>Cut_Axe_ANLA</hediff>
+    <hediffSkin>Cut_Axe_ANLA</hediffSkin>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <overkillPctToDestroyPart>0.4~0.9</overkillPctToDestroyPart>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0, 0</li>
+        <li>0.4, 1</li>
+        <li>0.6, 2</li>
+        <li>0.8, 3</li>
+		<li>1, 4</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <cutCleaveBonus>1.8</cutCleaveBonus>
+  </DamageDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>ANLA_CrushMelee</defName>
+    <deathMessage>{0} has been bashed to death.</deathMessage>
+    <hediffSkin>Crush_Weapon_ANLA</hediffSkin>
+    <bluntStunDuration>1.5</bluntStunDuration>
+    <bluntInnerHitChance>0.4</bluntInnerHitChance>
+  </DamageDef>
+  
+</Defs>

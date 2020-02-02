@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_SimpleShieldBelt_ANLA</defName>
+		<label>simple shield belt</label>
+    <description>A less advanced variant of the shield belt. It can still block ranged projectiles &amp; from blasts, but is weaker than a shield belt, having lower max capacity. However it is cheaper to make &amp; recharges quickly.</description>
+		<thingClass>ShieldBelt</thingClass>
+		<graphicData>
+      <texPath>Armor/ShieldBelts/SimpleShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Mass>1.5</Mass>
+      <WorkToMake>14000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.17</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.98</EnergyShieldEnergyMax>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Chemfuel>75</Chemfuel>
+    </costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<researchPrerequisite>Resarch_ShieldBeltsTierI_ANLA</researchPrerequisite>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+		</recipeMaker>
+	<thingCategories Inherit="False">
+      <li>Apparel_ShieldBelts_ANLA</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_AdvancedShieldBelt_ANLA</defName>
+		<label>advanced shield belt</label>
+    <description>An advanced shield-generating device. Has a higher energy capacity &amp; recharges fast, but still doesn't protect the user from against melee and is still susceptible from EMP blasts.\n\nThese are worn and mostly used by the so-called elite mercenary slashers.</description>
+		<thingClass>ShieldBelt</thingClass>
+		<graphicData>
+      <texPath>Armor/ShieldBelts/AdvShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Mass>3</Mass>
+      <WorkToMake>14000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.15</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.8</EnergyShieldEnergyMax>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+	  <Uranium>25</Uranium>
+      <Plasteel>60</Plasteel>
+    </costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<researchPrerequisite>Resarch_ShieldBeltsTierII_ANLA</researchPrerequisite>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+		</recipeMaker>
+	<thingCategories Inherit="False">
+      <li>Apparel_ShieldBelts_ANLA</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_TurtleShieldBelt_ANLA</defName>
+		<label>turtle shield belt</label>
+    <description>A heavy projectile-deflector shield generator device. It has an higher energy pool, allowing it to withstand &amp; making it harder to break the shield. It still doesn't block against melee attacks or from flames and from EMP.\n\nIt recharges much slower than other shields however.</description>
+		<thingClass>ShieldBelt</thingClass>
+		<graphicData>
+      <texPath>Armor/ShieldBelts/TurtleShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Mass>6.0</Mass>
+      <WorkToMake>14000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.09</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>3.5</EnergyShieldEnergyMax>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <costList>
+	  <ComponentSpacer>4</ComponentSpacer>
+	  <Uranium>40</Uranium>
+      <Plasteel>75</Plasteel>
+    </costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<researchPrerequisite>Resarch_ShieldBeltsTierII_ANLA</researchPrerequisite>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+		</recipeMaker>
+	<thingCategories Inherit="False">
+      <li>Apparel_ShieldBelts_ANLA</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+
+</Defs>

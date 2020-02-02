@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ////////////////////////////////////// Outlander Union -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[1]/options/Grenadier_Destructive</xpath>
+        <value>
+          <Town_Militia_ANLA>10</Town_Militia_ANLA>
+		  <Town_Hunter_ANLA>1</Town_Hunter_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[1]/options/Mercenary_Elite</xpath>
+        <value>
+          <Mercenary_Veteran_ANLA>10</Mercenary_Veteran_ANLA>
+		  <Mercenary_Elite>3</Mercenary_Elite>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[3]/guards/Grenadier_Destructive</xpath>
+        <value>
+          <Town_Militia_ANLA>10</Town_Militia_ANLA>
+		  <Town_Hunter_ANLA>3</Town_Hunter_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[3]/guards/Mercenary_Elite</xpath>
+        <value>
+          <Mercenary_Veteran_ANLA>10</Mercenary_Veteran_ANLA>
+		  <Mercenary_Elite>2</Mercenary_Elite>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[4]/options/Grenadier_Destructive</xpath>
+        <value>
+          <Town_Militia_ANLA>10</Town_Militia_ANLA>
+		  <Town_Hunter_ANLA>2</Town_Hunter_ANLA>
+		  <Mercenary_Veteran_ANLA>10</Mercenary_Veteran_ANLA>
+        </value>
+    </Operation>
+	
+	
+	<!-- ////////////////////////////////////// Neolithic Tribes -->
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[1]/options</xpath>
+        <value>
+          <Tribal_Skirmisher_ANLA>10</Tribal_Skirmisher_ANLA>
+		  <Tribal_Thunderer_ANLA>5</Tribal_Thunderer_ANLA>
+		  <Tribal_ChiefRangedGun_ANLA>1.5</Tribal_ChiefRangedGun_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[2]/options</xpath>
+        <value>
+          <Tribal_Skirmisher_ANLA>10</Tribal_Skirmisher_ANLA>
+		  <Tribal_Thunderer_ANLA>5</Tribal_Thunderer_ANLA>
+		  <Tribal_ChiefRangedGun_ANLA>3</Tribal_ChiefRangedGun_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[4]/options</xpath>
+        <value>
+          <Tribal_Skirmisher_ANLA>10</Tribal_Skirmisher_ANLA>
+		  <Tribal_ChiefRangedGun_ANLA>1.5</Tribal_ChiefRangedGun_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[5]/guards</xpath>
+        <value>
+          <Tribal_Skirmisher_ANLA>10</Tribal_Skirmisher_ANLA>
+		  <Tribal_Thunderer_ANLA>5</Tribal_Thunderer_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[6]/options</xpath>
+        <value>
+          <Tribal_Skirmisher_ANLA>5</Tribal_Skirmisher_ANLA>
+		  <Tribal_Thunderer_ANLA>7</Tribal_Thunderer_ANLA>
+		  <Tribal_ChiefRangedGun_ANLA>5</Tribal_ChiefRangedGun_ANLA>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Pirate Band -->
+	
+	<!-- ////////////////// Normal Fights -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[1]/options/Drifter</xpath>
+        <value>
+          <Drifter>1</Drifter>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[1]/options/Scavenger</xpath>
+        <value>
+          <Scavenger>2</Scavenger>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[1]/options/Pirate</xpath>
+        <value>
+          <Pirate>3</Pirate>
+		  <PirateOutlaw_ANLA>4</PirateOutlaw_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationInsert">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[1]/options/Grenadier_Destructive</xpath>
+        <value>
+          <Grenadier_Advanced_ANLA>1</Grenadier_Advanced_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationInsert">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[1]/options/Mercenary_Heavy</xpath>
+        <value>
+          <Mercenary_Shotgunner_ANLA>6</Mercenary_Shotgunner_ANLA>
+		  <Mercenary_Veteran_ANLA>6</Mercenary_Veteran_ANLA>
+		  <Mercenary_Rocketeer_ANLA>1</Mercenary_Rocketeer_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[1]/options</xpath>
+        <value>
+          <PirateBoss_Melee_ANLA>2</PirateBoss_Melee_ANLA>
+		  <Mercenary_EliteCommando_ANLA>2</Mercenary_EliteCommando_ANLA>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////// Melee Only -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[2]/options/Thrasher</xpath>
+		<value>
+		  <Thrasher>2</Thrasher>
+          <Thrasher_Heavy_ANLA>5</Thrasher_Heavy_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[2]/options/PirateBoss</xpath>
+		<value>
+		  <Mercenary_EliteSlasher_ANLA>3</Mercenary_EliteSlasher_ANLA>
+          <PirateBoss_Melee_ANLA>0.1</PirateBoss_Melee_ANLA>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////// Ranged Only -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[3]/options/Scavenger</xpath>
+		<value>
+		  <Scavenger>2</Scavenger>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[3]/options/Pirate</xpath>
+		<value>
+		  <Pirate>3</Pirate>
+		  <PirateOutlaw_ANLA>5</PirateOutlaw_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationInsert">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[3]/options/Grenadier_Destructive</xpath>
+        <value>
+          <Grenadier_Advanced_ANLA>1</Grenadier_Advanced_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationInsert">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[3]/options/Mercenary_Gunner</xpath>
+		<value>
+		  <Mercenary_Veteran_ANLA>10</Mercenary_Veteran_ANLA>
+		  <Mercenary_Shotgunner_ANLA>6</Mercenary_Shotgunner_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[3]/options</xpath>
+		<value>
+		  <Mercenary_EliteCommando_ANLA>2</Mercenary_EliteCommando_ANLA>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////// Explosive Fiestas with Ranged Mixed ins -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[4]/options/Grenadier_Destructive</xpath>
+		<value>
+		  <Grenadier_Destructive>8</Grenadier_Destructive>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[4]/options/Mercenary_Gunner</xpath>
+		<value>
+		  <Mercenary_Gunner>3</Mercenary_Gunner>
+		  <Mercenary_Shotgunner_ANLA>4</Mercenary_Shotgunner_ANLA>
+		  <Mercenary_Veteran_ANLA>4</Mercenary_Veteran_ANLA>
+		  <PirateOutlaw_ANLA>4</PirateOutlaw_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[4]/options/Mercenary_Heavy</xpath>
+		<value>
+		  <Mercenary_Heavy>6</Mercenary_Heavy>
+		  <Mercenary_Rocketeer_ANLA>5</Mercenary_Rocketeer_ANLA>
+		  <Grenadier_Advanced_ANLA>5</Grenadier_Advanced_ANLA>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[4]/options/Mercenary_Elite</xpath>
+		<value>
+		  <Mercenary_Elite>3</Mercenary_Elite>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////// Snipers Only to Elite & Veterans raids with some Sniper support -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[5]/options/Mercenary_Sniper</xpath>
+        <value>
+		  <PirateOutlaw_ANLA>4</PirateOutlaw_ANLA>
+          <Mercenary_Sniper>5</Mercenary_Sniper>
+		  <Mercenary_Veteran_ANLA>7</Mercenary_Veteran_ANLA>
+		  <Mercenary_Elite>7</Mercenary_Elite>
+		  <Mercenary_EliteCommando_ANLA>2</Mercenary_EliteCommando_ANLA>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////// Drifters to Commando Death squads -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[6]/commonality</xpath>
+		<value>
+          <commonality>7.5</commonality>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationRemove">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[6]/maxTotalPoints</xpath>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[6]/options/Drifter</xpath>
+        <value>
+          <Mercenary_EliteCommando_ANLA>10</Mercenary_EliteCommando_ANLA>
+        </value>
+    </Operation>
+
+</Patch>

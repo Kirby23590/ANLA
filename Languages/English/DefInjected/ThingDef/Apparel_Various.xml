@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: plate armor -->
+  <!-- EN: Overlapping solid plates of armor covering the entire body from neck to feet. -->
+  <Apparel_PlateArmor.description>Overlapping solid plates of armor covering the entire body from neck to feet.\n\nArmor like this are a very common sight with knights and warriors and many questing adventurers in medieval worlds, able to stop sword slashes or club strikes or low-caliber cartridges, but has limited protected against advanced firearms which can penetrate it's armor. The armor itself is also surprisingly uncommon in the rims as well.</Apparel_PlateArmor.description>
+  
+  <!-- EN: marine armor -->
+  <Apparel_PowerArmor.label>power armor</Apparel_PowerArmor.label>
+  <!-- EN: A suit of light powered armor. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines. -->
+  <Apparel_PowerArmor.description>A suit of light powered armor. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a person to wear this armor and still move quite easily.\n\nThese types of armor like are commonly seen with advanced civilizations military forces and space marines navies and are a standard issue in many glitterworld national guards and police forces.</Apparel_PowerArmor.description>
+
+</LanguageData>

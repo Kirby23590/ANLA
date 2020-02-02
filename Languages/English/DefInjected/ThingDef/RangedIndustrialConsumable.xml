@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: doomsday rocket launcher -->
+  <!-- EN: A single-use rocket launcher that fires a massive explosive projectile. Good against large groups of soft targets. Starts fires.\n\nBecause of its unwieldiness, single-use limitation, and the massive destruction it causes, it's said that one must be slightly crazy to use this weapon. -->
+  <Gun_DoomsdayRocket.description>A single-use heavy modified rocket launcher using parts from spacecraft cannons. It fires an antigrain mini-warhead that can create an massive explosion. For quick retribution &amp; devastation, almost leaving nothing but destruction and leaving a large blast of smoke.\n\nBecause of this, along with its unwieldiness, single-use limitation, &amp; the massive destruction it causes in it's wake, one must be slightly crazy or even mad to even fire this weapon.</Gun_DoomsdayRocket.description>
+  
+  <!-- EN: triple rocket launcher -->
+  <!-- EN: A single-use rocket launcher that fires a cluster of three large-bore explosive rockets. Good against smalll groups of tough targets.\n\nBecause of its unwieldiness, single-use limitation, and the massive destruction it causes, it's said that one must be slightly crazy to use this weapon. -->
+  <Gun_TripleRocket.description>A single-use triple-barreled heavy rocket launcher that fires a cluster of three large explosive rockets. Good against swarms of weaker enemies or stationary structures.\n\nIt appears to be based on a prototype for destroying medium or light armored vehicles, but because of its unwieldiness, single-use &amp; bellow average armor penetration capabilities, it's not very effective against heavily armored targets.</Gun_TripleRocket.description>
+  
+</LanguageData>

@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+		<defName>MeleeWeapon_HuntingClub_ANLA</defName>
+		<label>hunting club</label>
+		<description>An primitive war club used in hunting games, the light-weight nature of the club allows for fasting swinging to easily kill or to incapacitate the prey or in battle to quickly club an enemy to death.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/HuntingClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Medieval</techLevel>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1.25</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>1.85</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.95</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>MeleeWeapon_Quarterstaff_ANLA</defName>
+    <label>quarterstaff</label>
+    <description>Essentially a stick or a pole made of wood, stone or metal. Made and created for fast swinging and bashing. Mainly used in martial arts &amp; training in melee, but is also designed as a weapon for combat.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/LargeQuarterStick</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <costStuffCount>45</costStuffCount>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>1</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <recipeMaker>
+	  <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+		<li>ElectricSmithy</li>
+		<li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>back end</label>
+        <capacities>
+          <li>Blunt</li>
+		  <li>Poke</li>
+        </capacities>
+        <power>8.4</power>
+        <cooldownTime>1.72</cooldownTime>
+      </li>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.7</power>
+        <cooldownTime>1.67</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_BillyClub_ANLA</defName>
+		<label>billy club</label>
+		<description>A billy club is an police baton or an club. A tool used by the law to subdue with brute force or to show authority. This club appears to be improvised &amp; has some increased weight in it.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/BillyClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Medieval</techLevel>
+		<costStuffCount>65</costStuffCount>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>2.15</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBluntTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>pommel</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_GunstockClub_ANLA</defName>
+		<label>gunstock club</label>
+		<description>A indigenous war club with a shape of a stock of an rifle or firearm. The spearhead in the elbow allows this club to be dangerous &amp; lethal in combat.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/GunstockClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Medieval</techLevel>
+		<costStuffCount>68</costStuffCount>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.95</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBluntTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <tools>
+	  <li>
+        <label>stock</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.85</cooldownTime>
+      </li>
+      <li>
+        <label>spearhead</label>
+        <capacities>
+		  <li>Cut</li>
+		  <li>Bashing_ANLA</li>
+        </capacities>
+        <power>11.5</power>
+        <cooldownTime>2.10</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_Tonfa_ANLA</defName>
+		<label>tonfa</label>
+		<description>An blunt instrument with an side-handle used in martial arts where it originated. It's simple made but it's quick thrust &amp; slow but strong melee attacks can cripple or break limbs of an opponent.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/Tonfa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Medieval</techLevel>
+		<costStuffCount>65</costStuffCount>
+		<statBases>
+			<WorkToMake>9500</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBluntTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>1.77</cooldownTime>
+      </li>
+      <li>
+        <label>front end</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+	  <li>
+        <label>back end</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>13.5</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>body</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.5</power>
+        <cooldownTime>1.85</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_TrenchClub_ANLA</defName>
+		<label>trench club</label>
+		<description>A makeshift &amp; improvised club used by trench raiders in steamworlds, it's design is made from many simple materials &amp; is are generally fast to swing. Most trench club designs are known to create bloody impacts.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/TrenchClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Industrial</techLevel>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<WorkToMake>9800</WorkToMake>
+			<Mass>1.25</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBluntTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>pommel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.4</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Bashing_ANLA</li>
+        </capacities>
+        <power>11.5</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+	  <li>
+        <label>wedge</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>1.85</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_BaseballBat_ANLA</defName>
+		<label>baseball bat</label>
+		<description>A modern club used in sports for baseball games that's quite common in modern worlds or midworlds, however it is also a deadly blunt weapon with a strong swing in the rims used by outlanders or pirates.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/Baseballbat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Industrial</techLevel>
+		<costStuffCount>65</costStuffCount>
+		<statBases>
+			<WorkToMake>11460</WorkToMake>
+			<Mass>2.45</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBluntTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>16.5</power>
+        <cooldownTime>2.45</cooldownTime>
+      </li>
+      <li>
+        <label>end cap</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_Crowbar_ANLA</defName>
+		<label>crowbar</label>
+		<description>A heavy metal curved tool lever, while not strictly a weapon and more of a tool, it's claw head is used to pry open objects and crates, but can can pierce and penetrate armor.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/Crowbar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Industrial</techLevel>
+		<costStuffCount>75</costStuffCount>
+		<statBases>
+			<WorkToMake>11460</WorkToMake>
+			<Mass>3.25</Mass>
+		</statBases>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBluntTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.5</power>
+        <cooldownTime>2.12</cooldownTime>
+      </li>
+	  <li>
+        <label>claw head</label>
+        <capacities>
+          <li>Bashing_ANLA</li>
+        </capacities>
+        <power>14</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2.45</cooldownTime>
+      </li>
+      <li>
+        <label>lower claw</label>
+        <capacities>
+          <li>Bashing_ANLA</li>
+        </capacities>
+        <power>11</power>
+		<armorPenetration>0.24</armorPenetration>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_MorningStar_ANLA</defName>
+		<label>morning star</label>
+		<description>A brutal-looking spiked medieval mace. The metal spikes around the sphere are known to penetrate armor &amp; cause painful bleeding wounds. Its heavy but also very deadly.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/MorningStarMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Medieval</techLevel>
+		<costStuffCount>95</costStuffCount>
+		<statBases>
+			<WorkToMake>13000</WorkToMake>
+			<Mass>4.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBluntTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>pommel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.37</cooldownTime>
+      </li>
+      <li>
+        <label>spiked head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Bashing_ANLA</li>
+        </capacities>
+        <power>16.5</power>
+		<armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2.72</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_HeavyMace_ANLA</defName>
+		<label>heavy mace</label>
+		<description>A heavy forged medieval mace. The flanges on the head increases weight &amp; giving it a slow swing, but also for delivering powerful deadly crushing blows against heavily armored foes.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/KnightMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Medieval</techLevel>
+		<costStuffCount>95</costStuffCount>
+		<statBases>
+			<WorkToMake>13000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBluntTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>pommel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.37</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>MeleeWeapon_MaulHammer_ANLA</defName>
+		<label>maul</label>
+		<description>A enormous large hammer or a medieval great hammer. The weight is heavy and cumbersome which slows the wielder down and has very slow attacks. However its very powerful and can crush bones or skulls.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/MaulHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <techLevel>Medieval</techLevel>
+		<costStuffCount>125</costStuffCount>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>10</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_HeavyMeleeTierIII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <weaponTags Inherit="False">
+      <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13.5</power>
+        <cooldownTime>2.65</cooldownTime>
+      </li>
+	  <li>
+        <label>wedge</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>2.85</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>26.5</power>
+        <cooldownTime>3.0</cooldownTime>
+      </li>
+    </tools>
+	    <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blunts_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+  
+  
+</Defs>

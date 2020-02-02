@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>ANLAShot_Silentpistol</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/SilencerPistol</clipFolderPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.908592</min>        
+          <max>1.252976</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>ANLAShot_Musket</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/FlintlockMusket</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>67.76471</min>        
+          <max>67.76471</max>
+        </volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_GrenadeLauncher</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/GrenadeLauncher</clipFolderPath>
+          </li>
+        </grains>      
+		<volumeRange>
+		  <min>58.26471</min>
+		  <max>58.26471</max>
+		</volumeRange>
+		<pitchRange>
+          <min>0.9152574</min>        
+          <max>1.042392</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_MagnumRevolver</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/MagnumRevolver</clipFolderPath>
+          </li>
+        </grains>      
+		<volumeRange>
+          <min>68.35883</min>        
+          <max>68.35883</max>
+        </volumeRange>     
+        <pitchRange>
+          <min>0.9850492</min>        
+          <max>1.114676</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_BattleRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/BattleRifle</clipFolderPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.9770592</min>        
+          <max>1.112976</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_FreedomRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/FreedomRifle</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>32.5971</min>        
+          <max>32.5971</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.0770592</min>        
+          <max>1.1770592</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_DeltaRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/FreedomRifle</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>34.5971</min>        
+          <max>34.5971</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>1.4770592</min>        
+          <max>1.5660592</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_LeverActionRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/LeverActionRifle/Fire</clipFolderPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.9885596</min>        
+          <max>1.113987</max>
+        </pitchRange>      
+		<volumeRange>
+          <min>73.23565</min>        
+          <max>73.23565</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+	  <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/LeverActionRifle/Eject</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>42.78723</min>        
+          <max>42.78723</max>
+        </volumeRange>      
+		<pitchRange>
+          <min>0.9512765</min>        
+          <max>1.035658</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_DMRifle</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/DMR</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>
+          <min>0.8870591</min>
+          <max>1.121506</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_AutomaticRifle</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/DMR</clipFolderPath>
+          </li>
+        </grains>
+		<volumeRange>
+          <min>41.78723</min>        
+          <max>41.78723</max>
+        </volumeRange>
+        <pitchRange>
+          <min>1.487059</min>
+          <max>1.521506</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLABow_Crossbow</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+	<maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapons/Crossbow</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>50.70111</min>        
+          <max>70.30627</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.6688015</min>        
+          <max>0.7769372</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAInteract_Crossbow</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>WeaponInteract/CrossbowInteract</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>ANLAShot_AntiMaterielRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Guns/AntiMaterielRifle</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>68.06983</min>        
+          <max>68.06983</max>
+        </volumeRange>      
+		<pitchRange>
+          <min>0.9123747</min>        
+          <max>1.045658</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

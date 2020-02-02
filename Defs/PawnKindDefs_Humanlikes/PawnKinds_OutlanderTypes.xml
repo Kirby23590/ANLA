@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="OutlanderBase">
+    <defName>Town_Militia_ANLA</defName>
+    <label>town militia</label>
+    <combatPower>90</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>400</min>
+      <max>900</max>
+    </apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>TownMilitia_ANLA</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>400</min>
+      <max>900</max>
+    </weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>700</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OutlanderBase">
+    <defName>Town_Hunter_ANLA</defName>
+    <label>hunter</label>
+	<labelMale>male huntsman</labelMale>
+	<labelFemale>female huntress</labelFemale>
+    <combatPower>95</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>400</min>
+      <max>600</max>
+    </apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>TownHunter_ANLA</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>800</max>
+    </weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>700</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+    </techHediffsTags>
+  </PawnKindDef>
+
+</Defs>

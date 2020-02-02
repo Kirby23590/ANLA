@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: greatbow -->
+  <!-- EN: A powerful greatbow. Fires a heavy arrow long distances. -->
+  <Bow_Great.description>A powerful &amp; large heavy greatbow. Able to fire heavy arrows that could penetrate or even defeat plate armor, but has less range than the longbow &amp; is slower to fire.</Bow_Great.description>
+  
+  <!-- EN: recurve bow -->
+  <!-- EN: A recurve bow. Its construction behaves like a tuned spring, storing energy more efficiently and delivering a faster shot. -->
+  <Bow_Recurve.description>A recurve bow, simply a larger and a stronger composite bow. Its construction behaves like a tuned spring, storing energy more efficiently and delivering a faster &amp; a more damaging shot.</Bow_Recurve.description>
+  
+  <!-- EN: short bow -->
+  <!-- EN: A simple short selfbow made from a single piece of wood. -->
+  <Bow_Short.description>A simple short bow, using only the most primitive technologies, one of the oldest ranged weapons in ancient history. A favorite of tribes &amp; archers in hunting and in medieval warfare.</Bow_Short.description>
+  
+  <!-- EN: pila -->
+  <!-- EN: Pila are spears for throwing. They take a long time to throw, but one hit can do heavy damage. This weapon represents a bundle of pila and can be thrown over and over. The singular of pila is pilum. -->
+  <Pila.description>Pila are large throwing spears of ancient roman origin. Takes a long time to throw one, but if it hits it will heavy damage as it's able to incapacitate or kill its target. A singular word for a single pila is pilum.</Pila.description>
+  
+</LanguageData>

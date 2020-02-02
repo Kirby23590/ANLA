@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: autopistol bullet -->
+  <Bullet_Autopistol.label>pistol bullet</Bullet_Autopistol.label>
+  
+  <!-- EN: assault rifle -->
+  <!-- EN: A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. -->
+  <Gun_AssaultRifle.description>A general purpose standard-issue assault rifle suited for open fields or in urban combat. It has good range, decent power, &amp; rate of fire with a three-round burst with high accuracy.</Gun_AssaultRifle.description>
+  
+  <!-- EN: autopistol -->
+  <Gun_Autopistol.label>pistol</Gun_Autopistol.label>
+  <!-- EN: An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire. -->
+  <Gun_Autopistol.description>A ancient classic pattern semi-automatic pistol. It lacks strong stopping power, but is quick to fire &amp; has a reasonable damage output.</Gun_Autopistol.description>
+  
+  <!-- EN: bolt-action rifle -->
+  <!-- EN: An ancient pattern bolt-action rifle. With its long range, and low fire rate, it is unlikely to drive animals to revenge, which makes it a favorite weapon for hunting. -->
+  <Gun_BoltActionRifle.description>An ancient pattern military bolt-action rifle. It has good raw firepower with a slow-firing rate, but with it's long range, this makes this rifle a favorite for hunting &amp; target shooting and long-ranged combat.</Gun_BoltActionRifle.description>
+  
+  <!-- EN: chain shotgun -->
+  <!-- EN: A magazine-fed fully automatic shotgun. It is even shorter-ranged than a typical shotgun, but is extraordinarily dangerous due to burst fire. -->
+  <Gun_ChainShotgun.description>A magazine drum-fed fully automatic heavy shotgun. It has short range, but is extraordinarily dangerous due to it's four round bursts. However the accuracy is poor and it has a slow cooldown before firing again.</Gun_ChainShotgun.description>
+  
+  <!-- EN: heavy SMG -->
+  <!-- EN: A compact, wide-caliber slug-thrower. It's got a very short range, but it packs a punch and handles quite well. -->
+  <Gun_HeavySMG.description>A heavy-caliber custom-made rugged submachine gun. It has medium range, good firepower and nice stopping power, but has a lower fire-rate than other SMGs compared, trading it in for a higher boost in damage.</Gun_HeavySMG.description>
+  
+  <!-- EN: incendiary launcher -->
+  <!-- EN: A wide-barreled incendiary bolt launcher. The bolts create small incendiary explosions on impact, starting fires. -->
+  <Gun_IncendiaryLauncher.description>A heavy-barreled incendiary bolt launcher. The fired bolts create an deadly incendiary explosion on impact with an small area of effect, starting fires.</Gun_IncendiaryLauncher.description>
+  
+  <!-- EN: LMG -->
+  <!-- EN: A gas-operated light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies. -->
+  <Gun_LMG.description>A ancient gas-operated military light machine gun. While somewhat unwieldy, it fires a burst of seven bullets &amp; is effective against small groups of enemies or pinning one into cover, however it is inaccurate at shooting in longer ranges.</Gun_LMG.description>
+  
+  <!-- EN: machine pistol -->
+  <!-- EN: A micro-submachine gun. It is short-ranged, but very light in the hands. Its rate of fire tends to make up for its weakness. -->
+  <Gun_MachinePistol.description>A semi-automatic pistol that was modified into a automatic machine pistol. It is short-ranged, but has a fast rate of fire that tends to make up for it's weakness with three round bursts.</Gun_MachinePistol.description>
+  
+  <!-- EN: minigun -->
+  <!-- EN: A multi-barrel machine gun. It's unwieldy, but once it starts firing it fires very fast. Where most self-loading guns are powered by the energy from the gunpowder, the minigun uses an electric motor to rapidly cycle cartridges through the weapon. -->
+  <Gun_Minigun.description>A multi-barreled hand-held heavy support weapon. It's very unwieldy, but once it starts firing it fires very fast, but has very low accuracy.\n\nThe minigun uses an electric motor to rapidly cycle cartridges, making it fire extremely fast. Makes this effective against groups of enemies or to an single large target.</Gun_Minigun.description>
+  
+  <!-- EN: pump shotgun -->
+  <!-- EN: An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range. -->
+  <Gun_PumpShotgun.description>An ancient shotgun design that uses a pump-action mechanism for firing and reloading. Deadly and lethal, it has short range and is slow to fire. But packs heavy punch against light armored targets.</Gun_PumpShotgun.description>
+  
+  <!-- EN: revolver -->
+  <!-- EN: An ancient pattern double-action revolver. It's not very powerful, but has a decent range for a pistol and is quick on the draw. -->
+  <Gun_Revolver.description>An ancient pattern large-frame revolver. While not very strong, it still packs a good punch, and has decent range for a pistol and is slightly quick on the draw.</Gun_Revolver.description>
+  
+  <!-- EN: sniper rifle -->
+  <!-- EN: An ancient design of precision sniper rifle. Bolt action. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range. -->
+  <Gun_SniperRifle.description>An ancient bolt-action military sniper rifle. It has long range, great accuracy &amp; stopping power. However it is heavy &amp; is very slow at firing.\n\nWhich puts in a disadvantage against other weapons in close combat and against melee fighters.</Gun_SniperRifle.description>
+  
+</LanguageData>

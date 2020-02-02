@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Dynamites ========================== -->
+
+	<ThingDef ParentName="BaseMakeableGrenade">
+		<defName>Weapon_Dynamites_ANLA</defName>
+		<label>dynamites</label>
+		<description>Fuse lit explosives mostly used for demolition &amp; mining. Has a long delay before exploding, but are quick to throw.\n\nCan be used to flush or blast foes taking cover, or to effectively demolish structures &amp; stone walls.</description>
+    <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Weapons/Grenades/Dynamites</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_MolotovCocktail</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+      <WorkToMake>9900</WorkToMake>
+    </statBases>
+    <costList>
+      <Chemfuel>95</Chemfuel>
+    </costList>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw pipe bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>15.9</range>
+				<forcedMissRadius>2.9</forcedMissRadius>
+				<warmupTime>1.25</warmupTime>
+				<minRange>1.9</minRange>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>ANLAProj_GrenadeDynamite</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.99</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>ANLAProj_GrenadeDynamite</defName>
+		<label>dynamite</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Weapons/Projectiles/DynamiteThrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >1.9</explosionRadius >
+			<damageDef>Bomb_ANLA_Dynamite</damageDef>
+      <!-- Use default damage from explosion def -->
+			<explosionDelay>180</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+  <!-- ==================== Pipe Bomb ========================== -->
+
+	<ThingDef ParentName="BaseMakeableGrenade">
+		<defName>Weapon_PipeBombs_ANLA</defName>
+		<label>pipe bombs</label>
+		<description>Homemade improvised fuse thrown explosives. A explosive device used by anarchists &amp; bombers in urbworlds and the rims.\n\nIt has a long delay before exploding but has a big blast radius.</description>
+    <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Weapons/Grenades/PipeBombs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_MolotovCocktail</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>2.5</Mass>
+			<RangedWeapon_Cooldown>2.55</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <Chemfuel>65</Chemfuel>
+    </costList>
+	<recipeMaker>
+	  <researchPrerequisite>Resarch_GrenadesTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw pipe bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<minRange>2.5</minRange>
+				<forcedMissRadius>2.4</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>ANLAProj_GrenadePipebomb</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>ANLAProj_GrenadePipebomb</defName>
+		<label>pipe bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Weapons/Projectiles/PipebombThrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >2.4</explosionRadius >
+			<damageDef>Bomb_ANLA_Pipe</damageDef>
+      <!-- Use default damage from explosion def -->
+			<explosionDelay>180</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+  <!-- ==================== HE grenade ========================== -->
+
+	<ThingDef ParentName="BaseMakeableGrenade">
+		<defName>Weapon_GrenadeHE_ANLA</defName>
+		<label>HE grenades</label>
+		<description>High-explosive hand grenades. It has a large blast radius, powerful and dangerous but deals less damage than frags.\n\nMore effective against armored targets or destroying turrets &amp; structures.</description>
+    <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Weapons/Grenades/HEGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>2.5</Mass>
+			<RangedWeapon_Cooldown>2.55</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <Chemfuel>90</Chemfuel>
+	  <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+	  <researchPrerequisite>Resarch_GrenadesTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeAdvanced</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw HE grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>13.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<minRange>2.5</minRange>
+				<warmupTime>1.65</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>ANLAProj_GrenadeHE</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.88</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>ANLAProj_GrenadeHE</defName>
+		<label>HE grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Weapons/Projectiles/HEGrenadeThrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >2.4</explosionRadius >
+			<damageDef>Bomb_ANLA_HighExp</damageDef>
+      <!-- Use default damage from explosion def -->
+			<explosionDelay>120</explosionDelay>
+		</projectile>
+	</ThingDef>
+	
+	<!-- ==================== Incendiary grenade ========================== -->
+
+	<ThingDef ParentName="BaseMakeableGrenade">
+		<defName>Weapon_GrenadeIncendiary_ANLA</defName>
+		<label>Incendiary grenades</label>
+		<description>Incendiary explosive anti-personnel grenades. Has a large explosive radius, while not powerful, it's very useful for groups of enemies taking cover or a cluster of them.\n\nA good explosive to destroy and to burn turrets and wooden structures. Very weak at destroying stone buildings and against mechanoids.</description>
+    <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Weapons/Grenades/IncendiaryGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Mass>2.5</Mass>
+			<RangedWeapon_Cooldown>2.55</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Chemfuel>180</Chemfuel>
+	  <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+	<recipeMaker>
+	  <researchPrerequisite>Resarch_GrenadesTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeAdvanced</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw incendiary grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14.9</range>
+				<minRange>3.4</minRange>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.75</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>ANLAProj_GrenadeIncendiary</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.88</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>ANLAProj_GrenadeIncendiary</defName>
+		<label>incendiary grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Weapons/Projectiles/IncendiaryNadeThrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >2.4</explosionRadius >
+			<damageDef>Flame</damageDef>
+      <!-- Use default damage from explosion def -->
+			<explosionDelay>90</explosionDelay>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+	
+	<!-- ==================== Charge Bomb ========================== -->
+
+	<ThingDef ParentName="BaseMakeableGrenade">
+		<defName>Weapon_ChargeBomb_ANLA</defName>
+		<label>charge bomb</label>
+		<description>A single-use unstable charge energy bomb. It creates an powerful explosion &amp; must be thrown with caution as the blast radius is huge.\n\nCreated by mechanoid war veterans using an overloaded small fusion power core, in desperation attacks against overwhelming odds.</description>
+    <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Weapons/Grenades/Chargebomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<Mass>4.5</Mass>
+			<RangedWeapon_Cooldown>2.15</RangedWeapon_Cooldown>
+      <WorkToMake>16000</WorkToMake>
+    </statBases>
+    <costList>
+      <Plasteel>75</Plasteel>
+      <Uranium>55</Uranium>
+	  <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+	<recipeMaker>
+	  <researchPrerequisite>Resarch_RocketLaunchersNBombsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw charge bomb</label>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>15.9</range>
+				<minRange>5.7</minRange>
+				<forcedMissRadius>1.5</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>ANLAProj_ChargeBomb</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb_ANLA_ChargeBomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>ANLAProj_ChargeBomb</defName>
+		<label>charge bomb</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Weapons/Projectiles/ChargeBombThrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >5.8</explosionRadius >
+			<damageDef>Bomb_ANLA_ChargeBomb</damageDef>
+      <!-- Use default damage from explosion def -->
+			<explosionDelay>160</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+
+</Defs>

@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- ==================== KNIVES ========================== -->
+
+    <!-- ==================== Shiv T0 ========================== -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>MeleeWeapon_Shiv_ANLA</defName>
+		<label>shiv</label>
+		<description>A homemade improvised knife weapon only created for shanking or stabbing. Crafted &amp; made from a few materials, not very effective in combat but is cheap to make and quick to attack with.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Shiv</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <costStuffCount>5</costStuffCount>
+		<statBases>
+			<WorkToMake>250</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>7.8</power>
+        <cooldownTime>1.65</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+	<weaponTags>
+      <li>NeolithicMeleeBasic</li>
+	  <li>BudgetLowTier_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+	<recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Knives_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+	
+	<!-- ==================== Dirk T1 ========================== -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MeleeWeapon_Dirk_ANLA</defName>
+		<label>dirk</label>
+		<description>A ancient quick thrusting dagger from the seas. A dirk is a type of knife in steam worlds that has been used in knife fights as a weapon of choice in hand-to-hand combat.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/Dirk</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <costStuffCount>30</costStuffCount>
+		<statBases>
+			<WorkToMake>3400</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-40</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.72</cooldownTime>
+      </li>
+    </tools>
+	<weaponTags>
+      <li>MedievalMeleeBasic</li>
+	  <li>BudgetLowTier_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Knives_ANLA</li>
+    </thingCategories>
+	<recipeMaker>
+	    <researchPrerequisite>Smithing</researchPrerequisite>
+    </recipeMaker>
+	</ThingDef>
+
+	<!-- ==================== Large Dagger T1 ========================== -->
+	
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MeleeWeapon_LargeDagger_ANLA</defName>
+		<label>large dagger</label>
+    <techLevel>Neolithic</techLevel>
+		<description>An ancient large knife, The dagger is similar to the regular knife with it's use and status as a weapon. The dagger is more common in medieval worlds favored by thieves &amp; rogues.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/LargeDagger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <costStuffCount>30</costStuffCount>
+		<statBases>
+			<WorkToMake>6400</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10.5</power>
+        <cooldownTime>1.97</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Knives_ANLA</li>
+    </thingCategories>
+	<recipeMaker>
+	    <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	</ThingDef>
+	
+	<!-- ==================== Machete T2 ========================== -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_MacheteKnife_ANLA</defName>
+    <label>machete</label>
+    <description>A hybrid &amp; a combination between a knife &amp; a sword. While weaker than than a real sword. However it's balance between dexterity and speed with its deadliness makes up for it's weakness.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/MacheteKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>7200</WorkToMake>
+      <Mass>0.85</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	    <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Knives_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Combat Knife T2 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MeleeWeapon_CombatKnife_ANLA</defName>
+		<label>combat knife</label>
+    <techLevel>Industrial</techLevel>
+		<description>A militarized knife used by the military in close quarters combat or for survival. Very swift and sharp making it able to beat slower weapons, but trades speed for less damage.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/CombatKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>65</costStuffCount>
+		<statBases>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>1.77</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.88</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Knives_ANLA</li>
+    </thingCategories>
+	<recipeMaker>
+	    <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	</ThingDef>
+	
+	<!-- ==================== Kukri T3 ========================== -->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Kukri_ANLA</defName>
+    <label>kukri</label>
+    <description>A bent curved long knife rather meant for chopping rather than stabbing. As a cleaving weapon, it can hit multiple limbs, but is slow to attack with, compared to other knives.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/Kukri</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <costStuffCount>67</costStuffCount>
+    <statBases>
+      <WorkToMake>20800</WorkToMake>
+      <Mass>2.0</Mass>
+    </statBases>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cleaving_ANLA</li>
+        </capacities>
+        <power>14.5</power>
+        <cooldownTime>2.56</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeAxesTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Knives_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+	
+  <!-- ==================== Swords & Blades ========================== -->
+	
+  <!-- ==================== Macana T1 ========================== -->
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>MeleeWeapon_Macana_ANLA</defName>
+    <label>macana</label>
+    <description>A mesoamerican primitive slashing weapon, the club sides are embedded with small sharp stones or cut metal. Fast to swing, surprisingly effective at disemboweling or at damaging limbs.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/AztecClub</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>45</costStuffCount>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>1450</WorkToMake>
+      <Mass>1.00</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+	  <li>
+        <label>flat</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>1.85</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.95</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+	
+  <!-- ==================== Rapier T1 ========================== -->
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Rapier_ANLA</defName>
+    <label>rapier</label>
+    <description>A quick thrusting &amp; fencing sword. Very common in steam worlds in fencing sports or in battle. Fast to attack &amp; to stab with, but has a dull edge making it ineffective with slashing.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/RapierSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>54</costStuffCount>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+	  <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>9900</WorkToMake>
+      <Mass>0.75</Mass>
+    </statBases>
+    <equippedAngleOffset>-35</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.86</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+		  <li>Blunt</li>
+        </capacities>
+        <power>7.2</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	    <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+	
+  <!-- ==================== Shortsword T1 ========================== -->
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Shortsword_ANLA</defName>
+    <label>shortsword</label>
+    <description>The blade of squires and adventurers in medieval worlds. Quick to slash &amp; light in the hands, the shortsword is great with it's dexterity and speed, able to beat heavier &amp; slower weapons.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/ShortSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>60</costStuffCount>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+	  <li>CE_OneHandedWeapon</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>0.8</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12.5</power>
+        <cooldownTime>1.92</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	    <researchPrerequisite>Resarch_MeleeBladeTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+	
+  <!-- ==================== Jian Sword T2 ========================== -->
+	
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_JianSword_ANLA</defName>
+    <label>jian sword</label>
+    <description>A dynasty eastern quick slashing straight sword. It's simple but light-weight nature allows for slashing and stabbing in a quick succession used in martial arts with warrior monks.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/JianSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>63</costStuffCount>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>1.35</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.85</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	    <researchPrerequisite>Resarch_MeleeBladeTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Broadsword T2 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Broadsword_ANLA</defName>
+    <label>broadsword</label>
+    <description>An medieval sword with an rather large thick blade. The sword's edge is wide enough making this blade an all-around good slashing melee weapon against lightly armored opponents.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/BroadSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>65</costStuffCount>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>3.8</Mass>
+    </statBases>
+    <equippedAngleOffset>-60</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.95</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>15.5</power>
+        <cooldownTime>2.22</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	    <researchPrerequisite>Resarch_MeleeBladeTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Ice Axe T2 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_IceAxe_ANLA</defName>
+    <label>ice axe</label>
+    <description>A climbing tool used by mountaineers and climbers. The pick can latch on any surface, either stone or ice. But as a weapon, it can pierce armor with its pick &amp; can attack swiftly with the light hands.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/IceAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>75</costStuffCount>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>3.3</Mass>
+    </statBases>
+    <equippedAngleOffset>-55</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.88</cooldownTime>
+      </li>
+	  <li>
+        <label>pick</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.52</cooldownTime>
+      </li>
+	  <li>
+        <label>adze</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.28</cooldownTime>
+      </li>
+      <li>
+        <label>bottom spike</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	    <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- ==================== Knightly Sword T2 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_KnightlySword_ANLA</defName>
+    <label>knightly sword</label>
+    <description>An ancient blade used by footmen from the crusades. A balance between of the longswords &amp; shortswords. Good at stabbing and slashing despite being a lighter version of the longsword.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/KnightSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>75</costStuffCount>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-60</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.42</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>2.35</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== War Axe T2 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_WarAxe_ANLA</defName>
+    <label>war axe</label>
+    <description>An ancient cleaving weapon of the barbarians. The war axe is a deadly cutting weapon that can sever or destroy limbs for a slow tool that is simple made.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/Waraxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>90</costStuffCount>
+    <statBases>
+      <WorkToMake>20800</WorkToMake>
+      <Mass>5.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>haft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cleaving_ANLA</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2.77</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeAxesTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Kopis T3 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Kopis_ANLA</defName>
+    <label>kopis</label>
+    <description>A ancient heavy sword of sparta meant for chopping rather than stabbing or slashing. It's chopping attacks is very deadly but slow. A plural word for multiple kopis is kopides.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/Kopis</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>118</costStuffCount>
+    <statBases>
+      <WorkToMake>20800</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+	  <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cleaving_ANLA</li>
+        </capacities>
+        <power>20.5</power>
+        <cooldownTime>2.68</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeAxesTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Ninjato T3 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Ninjato_ANLA</defName>
+    <label>ninjato</label>
+    <description>An ancient feudal blade. This sword is preferred by ninjas &amp; assassins in medieval worlds in eastern kingdoms. Able to deliver faster slashes &amp; cuts, but less damage than the longsword.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/Ninjato</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>120</costStuffCount>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>5.0</Mass>
+    </statBases>
+    <equippedAngleOffset>-55</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+	  <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.35</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>21.5</power>
+        <cooldownTime>2.28</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Fire Axe T4 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_FireAxe_ANLA</defName>
+    <label>fire axe</label>
+    <description>A fire axe is a fireman's tool used to break doors during fire emergencies. However it's classified as a strong weapon used by axe murderers and a few desperate survivalists in the rims.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/FireAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeEliteTier_ANLA</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>135</costStuffCount>
+    <statBases>
+      <WorkToMake>20800</WorkToMake>
+      <Mass>6.0</Mass>
+    </statBases>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>haft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+	  <li>
+        <label>pick</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12.5</power>
+        <cooldownTime>2.58</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cleaving_ANLA</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.9</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeAxesTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Katana T4 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Katana_ANLA</defName>
+    <label>katana</label>
+    <description>The ancient sword of the samurai. The blade is sharp enough and is very deadly that it can easily cut enemies, however with slow &amp; predictable attacks.\n\nSome legends say it can easily cut through armor when one was crafted with an master swordsmith.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/Katana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags Inherit="False">
+      <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>140</costStuffCount>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>6.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-58</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+	  <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+	  <li>
+        <label>guard</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24.5</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.85</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Great Axe T4 ========================== -->
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_GreatAxe_ANLA</defName>
+    <label>greataxe</label>
+    <description>An ancient medieval double-hefted cleaving weapon. The double bladed greataxe is sharp enough to deliver one single deadly blow, but is very slow to attack with.\n\nThese heavy axes are favored in medieval worlds because of its ability to sever limbs or to behead people in battle or in executions.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/DoubleBattleaxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags Inherit="False">
+      <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>160</costStuffCount>
+    <statBases>
+      <WorkToMake>20800</WorkToMake>
+      <Mass>7.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-50</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>haft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.38</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cleaving_ANLA</li>
+        </capacities>
+        <power>25.5</power>
+        <cooldownTime>3.0</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_HeavyMeleeTierIII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Blades_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+
+  
+</Defs>

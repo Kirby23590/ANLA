@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////// Mercenaries Pawn Units -->
+
+	<!-- ////////////////////////////////////// Mercenary Gunner -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Gunner"]/combatPower</xpath>
+        <value>
+          <combatPower>70</combatPower>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Gunner"]/weaponMoney/max</xpath>
+        <value>
+          <max>750</max>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Gunner"]/weaponTags/li[text() = "Gun"]</xpath>
+        <value>
+          <li>MercGunnerGun_ANLA</li>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Mercenary Sniper -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Sniper"]/weaponMoney/max</xpath>
+        <value>
+          <max>800</max>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Mercenary Slasher Melee -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Slasher"]/combatPower</xpath>
+        <value>
+          <combatPower>125</combatPower>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Slasher"]/apparelMoney/min</xpath>
+        <value>
+          <min>800</min>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Slasher"]/apparelAllowHeadgearChance</xpath>
+        <value>
+          <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Mercenary Heavy -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Heavy"]/combatPower</xpath>
+        <value>
+          <combatPower>125</combatPower>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Heavy"]/apparelMoney/min</xpath>
+        <value>
+          <min>1000</min>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Heavy"]/apparelMoney/max</xpath>
+        <value>
+          <max>1500</max>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Heavy"]/weaponMoney/min</xpath>
+        <value>
+          <min>650</min>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Heavy"]/weaponTags/li[text() = "GunHeavy"]</xpath>
+        <value>
+          <li>MachineGun_ANLA</li>
+	      <li>HeavyExplosive_ANLA</li>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Mercenary Elite -->
+	
+	<Operation Class="PatchOperationInsert">
+        <xpath>Defs/PawnKindDef[defName = "Mercenary_Elite"]/inventoryOptions</xpath>
+        <value>
+          <weaponTags>
+            <li>EliteMercGun_ANLA</li>
+          </weaponTags>
+        </value>
+    </Operation>
+	
+	
+	
+	<!-- ///////////////////////////////////////////////////////////////////////////////// Outlander Pawn Units -->
+
+	<!-- ////////////////////////////////////// Villager -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Villager"]/weaponTags/li[text() = "Gun"]</xpath>
+        <value>
+          <li>VilagerWeap_ANLA</li>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Town Guard -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Town_Guard"]/weaponTags/li[text() = "Gun"]</xpath>
+        <value>
+          <li>TownGuard_ANLA</li>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Town Councilman -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Town_Councilman"]/combatPower</xpath>
+        <value>
+          <combatPower>80</combatPower>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Town_Councilman"]/weaponMoney/min</xpath>
+        <value>
+          <min>400</min>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Town_Councilman"]/weaponMoney/max</xpath>
+        <value>
+          <max>400</max>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Town_Councilman"]/weaponTags/li[text() = "Gun"]</xpath>
+        <value>
+          <li>Revolver</li>
+        </value>
+    </Operation>
+	
+	
+    <!-- ///////////////////////////////////////////////////////////////////////////////// Pirate Pawn Units -->
+	
+	<!-- ////////////////////////////////////// Pirate Scavengers -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name = "PirateScavTierBase"]/combatPower</xpath>
+        <value>
+          <combatPower>40</combatPower>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Pirate Gunner -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "Pirate"]/combatPower</xpath>
+        <value>
+          <combatPower>55</combatPower>
+        </value>
+    </Operation>
+	
+	<!-- ///////////////////////////////////////////////////////////////////////////////// Ancient Soldiers -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "AncientSoldier"]/weaponTags/li[text() = "Gun"]</xpath>
+        <value>
+          <li>MercEliteGun_ANLA</li>
+		  <li>MercVetGun_ANLA</li>
+		  <li>MercShotgun_ANLA</li>
+		  <li>MedievalMeleeAdvanced</li>
+		  <li>MachineGun_ANLA</li>
+		  <li>SpacerGun</li>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "AncientSoldier"]/weaponMoney</xpath>
+        <value>
+          <weaponMoney>
+            <min>500</min>
+            <max>2800</max>
+          </weaponMoney>
+        </value>
+    </Operation>
+	
+	<!-- ///////////////////////////////////////////////////////////////////////////////// Special Pawn Types -->
+	
+	<!-- ////////////////////////////////////// Stranger In Black -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "StrangerInBlack"]/weaponMoney/max</xpath>
+        <value>
+          <max>1200</max>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "StrangerInBlack"]/apparelRequired/li[text() = "Apparel_Pants"]</xpath>
+        <value>
+          <li>Apparel_FlakPants</li>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName = "StrangerInBlack"]/apparelRequired/li[text() = "Apparel_Duster"]</xpath>
+        <value>
+          <li>Apparel_FlakJacket</li>
+        </value>
+    </Operation>
+	
+	<!-- ///////////////////////////////////////////////////////////////////////////////// Mechanoid Pawn Units -->
+	
+	<!-- ////////////////////////////////////// Lancer -->
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName = "Mech_Lancer"]</xpath>
+        <value>
+          <aiAvoidCover>false</aiAvoidCover>
+        </value>
+    </Operation>
+	
+	<!-- ////////////////////////////////////// Centipede -->
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName = "Mech_Centipede"]/weaponTags</xpath>
+        <value>
+          <li>Centepede_Weapon_ANLA</li>
+        </value>
+    </Operation>
+	
+</Patch>

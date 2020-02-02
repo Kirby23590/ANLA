@@ -1,0 +1,1408 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Tier 1 Assault Rifles ========================== -->
+
+  <!-- ==================== Assault Carbine T1 ========================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_AssaultCarbine_ANLA</defName>
+    <label>assault carbine</label>
+    <description>A improvised &amp; modified carbine that fires in full-auto. Short ranged, weak &amp; lacks strong stopping power. But it's high rate of fire makes up for it.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/AssaultCarbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>33000</WorkToMake>
+      <Mass>3.25</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.52</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_AssaultCarbine</defaultProjectile>
+        <warmupTime>0.93</warmupTime>
+        <range>24.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>ScavGun_ANLA</li>
+			<li>TownGuard_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.27</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.5</power>
+        <cooldownTime>1.97</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_AssaultCarbine</defName>
+    <label>assault carbine bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+      <speed>67</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Bullpup T1 ========================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_BullpupWeapon_ANLA</defName>
+    <label>bullpup</label>
+    <description>A bullpup is a compact light military rifle or firearm. It has medium range, but is not that accurate. However it has a high rate of fire with an four-round burst.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/Bullpup</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>36500</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_BullpupGun</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>TownGuard_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.37</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_BullpupGun</defName>
+    <label>bullpup bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+	  <armorPenetrationBase>0.17</armorPenetrationBase>
+      <speed>62</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Infantry Bullpup T1 ========================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_InfantryBullpup_ANLA</defName>
+    <label>infantry bullpup</label>
+    <description>A compact infantry assault rifle, it comes with an reflex sight. Not very strong but has medium range &amp; a good fire rate, and it performs quite well in medium range combat.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/InfantryBullpup</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.8</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>38000</WorkToMake>
+      <Mass>4.0</Mass>
+      <AccuracyTouch>0.74</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.66</AccuracyMedium>
+      <AccuracyLong>0.64</AccuracyLong>
+      <RangedWeapon_Cooldown>1.57</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>67</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_InfantryBullpup</defaultProjectile>
+        <warmupTime>0.98</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.45</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_InfantryBullpup</defName>
+    <label>infantry bullpup bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>73</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Carbine Rifle T1 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_CarbineRifle_ANLA</defName>
+    <label>carbine rifle</label>
+    <description>A modern multi-purpose carbine. A shorter and lighter variant of the assault rifle. It has decent power, medium range and a high rate of fire with an four-round burst.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/MarineAR</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>39900</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.51</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_CarbineRifle</defaultProjectile>
+        <warmupTime>1.18</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_CarbineRifle</defName>
+    <label>carbine rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+	  <stoppingPower>0.8</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 2 Assault Rifles ========================== -->
+  
+  <!-- ==================== Combat Rifle T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_CombatRifle_ANLA</defName>
+    <label>combat rifle</label>
+    <description>A combat-purpose military or police rifle. It has medium range, decent power, has a high rate of fire &amp; excels in close quarters or in medium range.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/CombatRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>43000</WorkToMake>
+      <Mass>5.2</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.67</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>1.67</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>68</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_CombatRifle</defaultProjectile>
+        <warmupTime>1.10</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+			<li>PirateOutlaw_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_CombatRifle</defName>
+    <label>combat rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.23</armorPenetrationBase>
+	  <stoppingPower>0.9</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Paratrooper Bullpup T2 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_ParatrooperBullpup_ANLA</defName>
+    <label>paratrooper bullpup</label>
+    <description>A military compact rifle designed for airborne paratroopers. It has low firepower and lacks strong stopping power, but has a scope attached allowing for the user to fire from far distances.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/ParaBullpup</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.5</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>48000</WorkToMake>
+      <Mass>5.5</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.64</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_ParatrooperBullpup</defaultProjectile>
+        <warmupTime>1.17</warmupTime>
+        <range>34.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.4</power>
+        <cooldownTime>1.95</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_ParatrooperBullpup</defName>
+    <label>paratrooper bullpup bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+	  <armorPenetrationBase>0.19</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== SWAT Rifle T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_SWATAssaultRifle_ANLA</defName>
+    <label>SWAT rifle</label>
+    <description>A police assault pattern rifle used by SWAT teams in midworlds and urbworlds. Suited in long and mid-range combat. It has decent damage, with a high fire-rate.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/SWATRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.2</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>5.5</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.86</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.68</AccuracyLong>
+      <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_SWATRifle</defaultProjectile>
+        <warmupTime>1.02</warmupTime>
+        <range>32.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>MercVetGun_ANLA</li>
+			<li>MercEliteGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.8</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_SWATRifle</defName>
+    <label>SWAT rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+	  <stoppingPower>0.8</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Burst Rifle T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_BurstAssaultRifle_ANLA</defName>
+    <label>burst rifle</label>
+    <description>A military grade bullpup rifle that fires three-round in quick bursts. Good at mid-range &amp; long range firefights, along with good armor penetration capabilities.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/BurstRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>47500</WorkToMake>
+      <Mass>5.4</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.77</AccuracyMedium>
+      <AccuracyLong>0.67</AccuracyLong>
+      <RangedWeapon_Cooldown>1.76</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_BurstARifle</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>34.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.2</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_BurstARifle</defName>
+    <label>burst rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+	  <stoppingPower>0.9</stoppingPower>
+	  <armorPenetrationBase>0.37</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Merc Assault Rifle T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_MercAssaultRifle_ANLA</defName>
+    <label>mercenary assault rifle</label>
+    <description>A rugged para-military assault rifle. It has good range and good firepower. These rifles were used by private mercenaries jumping &amp; appearing from many worlds.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/MercAssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>49500</WorkToMake>
+      <Mass>6</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.56</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_MercAssaultRifle</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>29.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>MercVetGun_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>1.95</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_MercAssaultRifle</defName>
+    <label>mercenary rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>0.34</armorPenetrationBase>
+	  <stoppingPower>1.2</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Freedom Carbine T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_FreedomCarbine_ANLA</defName>
+    <label>freedom carbine</label>
+    <description>A short military carbine, fires four bullets in burst. Not accurate but packs good but small firepower and kick. It was heavily seen with insurgents &amp; militias in war torn worlds and the rims.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/FreedomCarbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.7</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_RifleTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>49700</WorkToMake>
+      <Mass>5.6</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.46</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>1.73</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_FreedomCarbine</defaultProjectile>
+        <warmupTime>1.24</warmupTime>
+        <range>29.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_FreedomRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+			<li>PirateOutlaw_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>1.97</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_FreedomCarbine</defName>
+    <label>freedom carbine bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.26</armorPenetrationBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Heavy Carbine T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_HeavyCarbine_ANLA</defName>
+    <label>heavy carbine</label>
+    <description>A large &amp; heavy military carbine used by airborne and navy branches. It packs quite a punch with its high firepower, with good stopping power. However the fire-rate of this weapon is low.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/HeavyCarbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.4</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_RifleTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>52000</WorkToMake>
+      <Mass>6.4</Mass>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.51</AccuracyMedium>
+      <AccuracyLong>0.44</AccuracyLong>
+      <RangedWeapon_Cooldown>1.77</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>88</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_HeavyCarbine</defaultProjectile>
+        <warmupTime>1.28</warmupTime>
+        <range>24.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_HeavyCarbine</defName>
+    <label>heavy carbine bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+	  <armorPenetrationBase>0.37</armorPenetrationBase>
+	  <stoppingPower>1.7</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  <!-- ==================== Urban Carbine T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_UrbanCarbine_ANLA</defName>
+    <label>urban carbine</label>
+    <description>A private military contractor's automatic combat carbine made for urban &amp; in close combat. It has short range, and has high recoil. A urbworld weapon design that has found its way to the rims.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/UrbanCarbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>49500</WorkToMake>
+      <Mass>5.0</Mass>
+      <AccuracyTouch>0.57</AccuracyTouch>
+      <AccuracyShort>0.67</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.21</AccuracyLong>
+      <RangedWeapon_Cooldown>1.54</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>84</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_UrbanCarbine</defaultProjectile>
+        <warmupTime>1.00</warmupTime>
+        <range>24.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_FreedomRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+			<li>PirateOutlaw_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.3</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_UrbanCarbine</defName>
+    <label>Urban Carbine bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+	  <armorPenetrationBase>0.38</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Specialist Rifle T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_SpecialistRifle_ANLA</defName>
+    <label>specialist rifle</label>
+    <description>A high-grade modern military assault rifle suited for long &amp; mid-ranged encounters. It has good damage &amp; good range. It was mostly used by specialists in military forces &amp; also with mercenary groups.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/SpecialistRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.5</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>55000</WorkToMake>
+      <Mass>6.3</Mass>
+      <AccuracyTouch>0.54</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.67</AccuracyLong>
+      <RangedWeapon_Cooldown>1.78</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>88</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_SpecialistRifle</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>34.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_DeltaRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>MercVetGun_ANLA</li>
+			<li>MercEliteGun_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.45</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_SpecialistRifle</defName>
+    <label>specialist rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>0.37</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>74</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 3 Assault Rifles ========================== -->
+  
+  <!-- ==================== Freedom Rifle T3 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_FreedomRifle_ANLA</defName>
+    <label>freedom rifle</label>
+    <description>An ancient automatic military rifle. It has good stopping power &amp; high damage by trading in for lower accuracy. It was widely used by pirates, guerrillas &amp; urbworld crime syndicates.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/FreedomRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_RifleTierIII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>53500</WorkToMake>
+      <Mass>6.3</Mass>
+      <AccuracyTouch>0.66</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.48</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.72</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>88</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_FreedomRifle</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>31.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_FreedomRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>MercVetGun_ANLA</li>
+			<li>MercEliteGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_FreedomRifle</defName>
+    <label>freedom rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+	  <armorPenetrationBase>0.38</armorPenetrationBase>
+	  <stoppingPower>1.5</stoppingPower>
+      <speed>64</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Military Combat Rifle T3 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_MilitaryCombatRifle_ANLA</defName>
+    <label>military combat rifle</label>
+    <description>A high-grade military rifle designed for special forces, this weapon is suited in urban combat or in large open fields, packing good fire power &amp; range. It has a low-fire rate, but has high armor penetration.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/MilitaryComRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.7</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_RifleTierIII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>58000</WorkToMake>
+      <Mass>6.5</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.67</AccuracyLong>
+      <RangedWeapon_Cooldown>1.82</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>98</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_MilitaryCombatRifle</defaultProjectile>
+        <warmupTime>1.37</warmupTime>
+        <range>33.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_DeltaRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+		    <li>MercEliteGun_ANLA</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.27</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_MilitaryCombatRifle</defName>
+    <label>military combat rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+	  <armorPenetrationBase>0.45</armorPenetrationBase>
+	  <stoppingPower>1.7</stoppingPower>
+      <speed>77</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Full-auto Battle Rifle T3 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_FullAutoBattleRifle_ANLA</defName>
+    <label>full-auto battle rifle</label>
+    <description>A heavy fully-automatic military battle rifle. It has a high fire-rate, fires four bullets but with high recoil. Despite that it gets the job done.</description>
+    <graphicData>
+      <texPath>Weapons/AssaultRifles/AutoBattleRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.4</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_RifleTierIII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>59000</WorkToMake>
+      <Mass>7.0</Mass>
+      <AccuracyTouch>0.66</AccuracyTouch>
+      <AccuracyShort>0.66</AccuracyShort>
+      <AccuracyMedium>0.42</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>1.84</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_FullAutoBattleRifle</defaultProjectile>
+        <warmupTime>1.48</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_DeltaRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+		    <li>MercEliteGun_ANLA</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_AR_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_FullAutoBattleRifle</defName>
+    <label>full-auto battle rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>0.36</armorPenetrationBase>
+	  <stoppingPower>1.5</stoppingPower>
+      <speed>76</speed>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

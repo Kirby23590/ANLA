@@ -1,0 +1,1214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Tier 1 Pistols ========================== -->
+
+  <!-- ==================== Flintlock Pistol T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_FlintlockPistol_ANLA</defName>
+    <label>flintlock pistol</label>
+    <description>An old ancestor to many firearms used by mankind. The flintlock is one the first gunpowder firearms. It has a low fire rate &amp; has short range, it packs a small punch but cannot punch strong armor.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/FlintlockPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_BasicGunsmithing_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags Inherit="False">
+      <li>SimpleGun</li>
+	  <li>ScavGun_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.48</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>1.78</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>12</Steel>
+	  <WoodLog>15</WoodLog>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_FlintlockPistol</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>14.9</range>
+        <soundCast>ANLAShot_Musket</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_FlintlockPistol</defName>
+    <label>flintlock pistol ball</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1</stoppingPower>
+	  <armorPenetrationBase>0.09</armorPenetrationBase>
+      <speed>62</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Rimfire Pistol T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RimfirePistol_ANLA</defName>
+    <label>rimfire pistol</label>
+    <description>A cheap suppressed semi-automatic pistol. Fires weak cartridge rounds. It's quick to fire and is somewhat accurate, but has short range. Designed for newcomers at shooting, but a poor weapon choice in large fights.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/RimPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>4550</WorkToMake>
+      <Mass>0.35</Mass>
+      <AccuracyTouch>0.94</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_RimfirePistol</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>19.9</range>
+        <soundCast>ANLAShot_Silentpistol</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_RimfirePistol</defName>
+    <label>rimfire pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>62</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Compact Pistol T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_CompactPistol_ANLA</defName>
+    <label>compact pistol</label>
+    <description>A police compact police semi-automatic pocket pistol used for concealment. It has weak damage &amp; weak stopping power with short range, but it fires two bullets quickly to make up for it.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/CompactPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>ScavGun_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.45</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.36</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.18</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>22</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_CompactPistol</defaultProjectile>
+        <warmupTime>0.52</warmupTime>
+        <range>17.9</range>
+		<burstShotCount>2</burstShotCount>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_CompactPistol</defName>
+    <label>compact pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <armorPenetrationBase>0.09</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Police Pistol T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_PolicePistol_ANLA</defName>
+    <label>police pistol</label>
+    <description>A police standard-issue light-weight sidearm. Weak but is quick to fire and aim. A favorite in many modern worlds and urbworlds, including in the rims.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/PolicePistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>ScavGun_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.67</AccuracyShort>
+      <AccuracyMedium>0.38</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_PolicePistol</defaultProjectile>
+        <warmupTime>0.38</warmupTime>
+        <range>23.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.5</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_PolicePistol</defName>
+    <label>police pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+	  <armorPenetrationBase>0.12</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Silenced Pistol T1 ========================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_SilencedPistol_ANLA</defName>
+    <label>silenced pistol</label>
+    <description>A silent semi-automatic pistol with an integrated suppressor, intended for hitmen or in quiet assassinations. Its not very strong but is very accurate, but has short range with weak armor penetration.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/SilencedPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>ScavGun_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.92</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.69</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_Silentpistol</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>19.9</range>
+        <soundCast>ANLAShot_Silentpistol</soundCast>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.85</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_Silentpistol</defName>
+    <label>silenced pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== German Officer's Pistol T1 ========================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_GermanOfficerPistol_ANLA</defName>
+    <label>german officer's pistol</label>
+    <description>An ancient weapon design that has been used by german military officers, tank drivers and commanders. It has a long barrel and reloads by using stripper clips. Weak but has long range and good accuracy.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/GermanPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>ScavGun_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.86</AccuracyShort>
+      <AccuracyMedium>0.67</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>1.27</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_GermanOfficerpistol</defaultProjectile>
+        <warmupTime>0.57</warmupTime>
+        <range>27.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_GermanOfficerpistol</defName>
+    <label>german pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Service Pistol T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_ServicePistol_ANLA</defName>
+    <label>service pistol</label>
+    <description>A type of sidearm that was used by police officers, special agents &amp; spies alike. It fires two bullets and is quick to fire with a quick trigger.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/ServicePistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>ScavGun_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.8</Mass>
+      <AccuracyTouch>0.84</AccuracyTouch>
+      <AccuracyShort>0.63</AccuracyShort>
+      <AccuracyMedium>0.32</AccuracyMedium>
+      <AccuracyLong>0.26</AccuracyLong>
+      <RangedWeapon_Cooldown>1.28</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>32</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_ServicePistol</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>23.9</range>
+		<burstShotCount>2</burstShotCount>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.5</power>
+        <cooldownTime>1.87</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_ServicePistol</defName>
+    <label>service pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+      <speed>62</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Russian Pistol T1 ========================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RussianPistol_ANLA</defName>
+    <label>russian pistol</label>
+    <description>A ancient pistol pattern made and used by soldiers and officers of the soviet union before its fall and decline. Inaccurate &amp; has less range, but has a quick trigger.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/RussianPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>ScavGun_ANLA</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.62</AccuracyShort>
+      <AccuracyMedium>0.36</AccuracyMedium>
+      <AccuracyLong>0.27</AccuracyLong>
+      <RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_RussianPistol</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>19.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_RussianPistol</defName>
+    <label>russian pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <stoppingPower>0.8</stoppingPower>
+	  <armorPenetrationBase>0.11</armorPenetrationBase>
+      <speed>57</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Cowboy Revolver T1 ========================== -->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_CowboyRevolver</defName>
+    <label>cowboy revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>0.9</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_CowboyRevolver_ANLA</defName>
+    <label>cowboy revolver</label>
+    <description>An ancient pattern revolving weapon design that's a favorite in western traditions, It deals less damage than the regular revolver and has less range, but is very quick in the draw and fast to fire.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/CowboyRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>Revolver</li>
+	  <li>VilagerWeap_ANLA</li>
+	  <li>TownGuard_ANLA</li>
+    </weaponTags>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_CowboyRevolver</defaultProjectile>
+        <warmupTime>0.56</warmupTime>
+        <range>23.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.2</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Tier 2 Pistols ========================== -->
+  
+  <!-- ==================== Combat Pistol T2 ========================== -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_CombatPistol</defName>
+    <label>combat pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+	  <armorPenetrationBase>0.21</armorPenetrationBase>
+	  <stoppingPower>1</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_CombatPistol_ANLA</defName>
+    <label>combat pistol</label>
+    <description>A slightly powerful personal combat sidearm, firing jacketed-hollow point precision rounds. Slightly slow in the trigger &amp; it packs small firepower, but it can punch flak armor.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/CombatPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_GunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.6</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.66</AccuracyShort>
+      <AccuracyMedium>0.44</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.39</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+	  <li>PirateOutlaw_ANLA</li>
+    </weaponTags>
+    <costList>
+      <Steel>47</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_CombatPistol</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>23.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.2</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Cavalry Revolver T2 ========================== -->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_CavalryRevolver</defName>
+    <label>cavalier revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <stoppingPower>1.2</stoppingPower>
+	  <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_CavalryRevolver_ANLA</defName>
+    <label>cavalry revolver</label>
+    <description>An ancient percussion medium-frame western revolver, used by cavaliers and cowboys alike. It has good range but is slightly slow in the side in firing. However it is very accurate &amp; penetrate flak armor.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/CavalryRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.67</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>1.68</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+	  <li>Revolver</li>
+	  <li>VilagerWeap_ANLA</li>
+	  <li>TownGuard_ANLA</li>
+    </weaponTags>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_GunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_CavalryRevolver</defaultProjectile>
+        <warmupTime>0.78</warmupTime>
+        <range>27.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Military Pistol T2 ========================== -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_MilitaryPistol</defName>
+    <label>military pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+	  <armorPenetrationBase>0.12</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_MilitaryPistol_ANLA</defName>
+    <label>military pistol</label>
+    <description>A modern military standard-issue semi-automatic sidearm. It has good accuracy and a fast trigger, however it lacks strong damage or stopping power.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/MilitaryPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_GunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.84</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+	  <li>Revolver</li>
+    </weaponTags>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_MilitaryPistol</defaultProjectile>
+        <warmupTime>0.38</warmupTime>
+        <range>23.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.2</power>
+        <cooldownTime>1.87</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Heavy Pistol T2 ========================== -->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_HeavyPistol</defName>
+    <label>heavy pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+	  <armorPenetrationBase>0.27</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>68</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_HeavyPistol_ANLA</defName>
+    <label>heavy pistol</label>
+    <description>A ancient large semi-automatic pistol design. Chambered with large caliber cartridges, it packs a good punch and is fast to fire. It has good armor penetration as well, but is hard to aim at times.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/HeavyPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>12600</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+	  <li>Revolver</li>
+	  <li>TownGuard_ANLA</li>
+    </weaponTags>
+    <costList>
+      <Steel>54</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_HandgunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_HeavyPistol</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>25.9</range>
+        <soundCast>ANLAShot_MagnumRevolver</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Magnum Revolver T3 ========================== -->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_MagnumRevolver</defName>
+    <label>magnum revolver bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>67</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_MagnumRevolver_ANLA</defName>
+    <label>magnum revolver</label>
+    <description>A large frame magnum caliber revolver. Its slightly slow to fire &amp; has less range than other revolvers. But can easily penetrate flak armor with it's strong punch.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/MagRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.37</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+	  <li>Revolver</li>
+    </weaponTags>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_HandgunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_MagnumRevolver</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>23.9</range>
+        <soundCast>ANLAShot_MagnumRevolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- ==================== Long Magnum Revolver T3 ========================== -->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_LongMagnumRevolver</defName>
+    <label>long revolver magnum</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>24</damageAmountBase>
+	  <armorPenetrationBase>0.50</armorPenetrationBase>
+      <stoppingPower>2.5</stoppingPower>
+      <speed>77</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_LongMagnumRevolver_ANLA</defName>
+    <label>long magnum revolver</label>
+    <description>A long heavy-frame magnum revolver. Its exceptionally strong and large for a sidearm, it has long range &amp; it can bust flak armor &amp; even potentially go against plate armor, at a cost at firing slowly.</description>
+    <graphicData>
+      <texPath>Weapons/Pistols/LongRevolver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+	<generateCommonality>0.4</generateCommonality>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.56</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>1.52</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+	  <li>Revolver</li>
+    </weaponTags>
+    <costList>
+      <Steel>75</Steel>
+	  <Plasteel>15</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_HandgunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_LongMagnumRevolver</defaultProjectile>
+        <warmupTime>1.12</warmupTime>
+        <range>31.9</range>
+        <soundCast>ANLAShot_MagnumRevolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Handguns_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+
+
+
+
+
+</Defs>

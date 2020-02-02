@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Shield belt -->
+  <ShieldBelt.label>shield belts</ShieldBelt.label>
+  
+  <MultibarrelWeapons.label>heavy support weapons</MultibarrelWeapons.label>
+  <MultibarrelWeapons.description>Assemble heavier support weapons and machine guns such as miniguns in the machining table and the modern gunsmith's table.</MultibarrelWeapons.description>
+  
+  <!-- EN: Craft precisely-machined guns like assault rifles and sniper rifles. -->
+  <PrecisionRifling.description>Craft precisely accurate rifles &amp; firearms like more powerful assault rifles at the machining table and in the modern gunsmith's table.</PrecisionRifling.description>
+  
+</LanguageData>

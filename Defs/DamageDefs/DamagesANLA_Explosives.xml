@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- ==================== Grenades ========================== -->
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_Dynamite</defName>
+    <defaultDamage>21</defaultDamage>
+	<buildingDamageFactor>6</buildingDamageFactor>
+	<minDamageToFragment>8</minDamageToFragment>
+	<harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_Pipe</defName>
+    <defaultDamage>30</defaultDamage>
+	<minDamageToFragment>14</minDamageToFragment>
+	<defaultArmorPenetration>0.14</defaultArmorPenetration>
+	<defaultStoppingPower>1.0</defaultStoppingPower>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_Frag</defName>
+    <defaultDamage>45</defaultDamage>
+	<buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>2</plantDamageFactor>
+    <defaultStoppingPower>1.0</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_HighExp</defName>
+    <defaultDamage>35</defaultDamage>
+    <defaultArmorPenetration>0.75</defaultArmorPenetration>
+	<minDamageToFragment>10</minDamageToFragment>
+	<buildingDamageFactor>4</buildingDamageFactor>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_ChargeBomb</defName>
+    <defaultDamage>80</defaultDamage>
+    <defaultStoppingPower>2.0</defaultStoppingPower>
+    <defaultArmorPenetration>1.20</defaultArmorPenetration>
+  </DamageDef>
+  
+  <!-- ==================== Nade Launchers ========================== -->
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_Grenadelauncher</defName>
+    <defaultDamage>30</defaultDamage>
+	<buildingDamageFactor>2</buildingDamageFactor>
+    <defaultArmorPenetration>0.80</defaultArmorPenetration>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_Riotlauncher</defName>
+    <defaultDamage>25</defaultDamage>
+	<plantDamageFactor>3</plantDamageFactor>
+	<buildingDamageFactor>2</buildingDamageFactor>
+	<minDamageToFragment>10</minDamageToFragment>
+    <defaultArmorPenetration>0.25</defaultArmorPenetration>
+  </DamageDef>
+  
+  <!-- ==================== Rocket Launchers ========================== -->
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_RocketLauncher</defName>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>3.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.75</defaultArmorPenetration>
+	<buildingDamageFactor>7</buildingDamageFactor>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>Bomb_ANLA_DoomsdayRocket</defName>
+    <defaultDamage>250</defaultDamage>
+    <defaultStoppingPower>2.0</defaultStoppingPower>
+    <defaultArmorPenetration>1.30</defaultArmorPenetration>
+	<buildingDamageFactor>5</buildingDamageFactor>
+  </DamageDef>
+
+</Defs>

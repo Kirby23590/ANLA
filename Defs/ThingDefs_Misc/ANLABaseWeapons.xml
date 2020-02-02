@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="ANLA_BaseMakeableGun" ParentName="BaseGunWithQuality" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableGunsmithModern_ANLA</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

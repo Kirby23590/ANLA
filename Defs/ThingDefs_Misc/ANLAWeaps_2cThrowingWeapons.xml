@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Tier 1 Throwing Weapons ======================= -->
+
+  <!-- ========================== Javelin T1 ============================== -->
+  
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Throwing_Javelin_ANLA</defName>
+    <label>javelin</label>
+    <description>Javelins are primitive throwing spears used by mankind during in the earliest years. They are fast to throw &amp; deals heavy damage, but it breaks when thrown to heavily armored targets.\n\nA user armed primarily with javelins is known as a javelineer.</description>
+    <graphicData>
+      <texPath>Weapons/ThrowingWeapons/Javelin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <WoodLog>60</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.29</AccuracyLong>
+      <RangedWeapon_Cooldown>2.05</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+	  <li>NeolithicSkirmisherRanged_ANLA</li>
+    </weaponTags>
+    <recipeMaker>
+	  <recipeUsers>
+        <li>BowyerBench_ANLA</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLAJavelin_Thrown</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>21.9</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.5</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+    </tools>
+	  <thingCategories Inherit="False">
+        <li>WeaponsRanged_Throwing_ANLA</li>
+      </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ANLAJavelin_Thrown</defName>
+    <label>javelin</label>
+    <graphicData>
+      <texPath>Weapons/Projectiles/JavelinThrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1.3</stoppingPower>
+      <armorPenetrationBase>0.08</armorPenetrationBase>
+      <speed>42</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Tier 2 Throwing Weapons ======================= -->
+  
+  <!-- =========================== Atlatl T2 ============================== -->
+  
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Throwing_Atlatl_ANLA</defName>
+    <label>atlatl</label>
+    <description>Atlatls are throwing long dart or spears, with an lever at the end, despite it being primitive. It delivers a fast projectile speed with good armor penetration when thrown.</description>
+    <graphicData>
+      <texPath>Weapons/ThrowingWeapons/Atlatl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+	<generateCommonality>0.4</generateCommonality>
+    <costList>
+      <WoodLog>65</WoodLog>
+	  <Steel>25</Steel>
+    </costList>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>2.10</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+	  <li>NeolithicSkirmisherRanged_ANLA</li>
+    </weaponTags>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_ThrowingWeaponsTierI_ANLA</researchPrerequisite>
+	  <recipeUsers>
+        <li>BowyerBench_ANLA</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLAProj_Atlatl_Thrown</defaultProjectile>
+        <warmupTime>2.2</warmupTime>
+        <range>27.9</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+	  <thingCategories Inherit="False">
+        <li>WeaponsRanged_Throwing_ANLA</li>
+      </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ANLAProj_Atlatl_Thrown</defName>
+    <label>atlatl dart</label>
+    <graphicData>
+      <texPath>Weapons/Projectiles/AtlatlThrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>1.3</stoppingPower>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>57</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 3 Throwing Weapons ======================= -->
+  
+  <!-- ======================= Throwing Harpoon T3 ======================== -->
+  
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Throwing_Harpoon_ANLA</defName>
+    <label>throwing harpoon</label>
+    <description>Simple made throwing weapons made for hunting cetaceans &amp; larger sea creatures. A fishing tool used by whalers.\n\nBut in combat, it takes a long time to throw one, but it can heavily damage or impale a heavily armored warrior, combined with it's high armor penetration when thrown.</description>
+    <graphicData>
+      <texPath>Weapons/ThrowingWeapons/ThrowableHarpoon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+	<generateCommonality>0.3</generateCommonality>
+    <costList>
+	  <Steel>120</Steel>
+    </costList>
+    <statBases>
+      <WorkToMake>55000</WorkToMake>
+      <Mass>6</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.29</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLAProj_ThrowingHarpoon_Thrown</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>19.9</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.54</cooldownTime>
+      </li>
+    </tools>
+	  <thingCategories Inherit="False">
+        <li>WeaponsRanged_Throwing_ANLA</li>
+      </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ANLAProj_ThrowingHarpoon_Thrown</defName>
+    <label>harpoon spear</label>
+    <graphicData>
+      <texPath>Weapons/Projectiles/HarpoonThrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>32</damageAmountBase>
+      <stoppingPower>3.0</stoppingPower>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>26</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>
+
+

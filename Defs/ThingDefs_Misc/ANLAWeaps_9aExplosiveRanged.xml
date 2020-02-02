@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!-- ==================== Tier 1 Ranged Explosives ========================== -->
+
+ <!-- ==================== Flare Gun T1 ========================== -->
+
+ <ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_FlareGun_ANLA</defName>
+		<label>flare gun</label>
+    <description>A emergency signal explosive flare firing equipment. Starts Fires. While not strictly a weapon, but in the rims it has been used to create wildfires by arsonists &amp; pyromaniacs.</description>
+		<graphicData>
+			<texPath>Weapons/ExplosiveGuns/FlareGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.6</generateCommonality>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>4.0</Mass>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>55</Steel>
+			<Chemfuel>50</Chemfuel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_ExplosivesRangedTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_FlareGun</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>24.9</range>
+				<minRange>1.9</minRange>
+			<forcedMissRadius>1.9</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_ExpRange_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_FlareGun</defName>
+    <label>explosive flare</label>
+    <graphicData>
+      <texPath>Things/Projectile/InfernoCannonShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>50</speed>
+      <damageDef>Flame</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.1</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Tier 2 Ranged Explosives ========================== -->
+  
+  <!-- ==================== Riot Grenade Launcher T2 ========================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_RiotGrenadeLauncher_ANLA</defName>
+		<label>riot grenade launcher</label>
+    <description>A riot control non-lethal launcher that has been modified to fire weak explosive grenade rounds. Effective against stationary enemies taking using cover. Less inaccurate than the standard grenade launcher, but is faster to fire.</description>
+		<graphicData>
+			<texPath>Weapons/ExplosiveGuns/RiotLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.3</generateCommonality>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>6.5</Mass>
+			<RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>75</Steel>
+			<Chemfuel>150</Chemfuel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_ExplosivesRangedTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<weaponTags>
+		<li>HeavyExplosive_ANLA</li>
+	 </weaponTags>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_RiotGrenadeLauncher</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<minRange>3.5</minRange>
+				<range>27.9</range>
+        <forcedMissRadius>2.1</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ANLAShot_GrenadeLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>body</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_ExpRange_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_RiotGrenadeLauncher</defName>
+    <label>riot grenade round</label>
+    <graphicData>
+      <texPath>Things/Projectile/InfernoCannonShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Bomb_ANLA_Riotlauncher</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Tier 3 Ranged Explosives ========================== -->
+  
+  <!-- ==================== Grenade Launcher T3 ========================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_GrenadeLauncher_ANLA</defName>
+		<label>grenade launcher</label>
+    <description>A ranged explosive-launcher for firing explosive grenade rounds from a distance or afar. Slow to fire. Very effective against a group or a single stationary enemy taking cover, and enemy auto-turrets or structures.</description>
+		<graphicData>
+			<texPath>Weapons/ExplosiveGuns/GrenadeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.3</generateCommonality>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>7.0</Mass>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>95</Steel>
+			<Chemfuel>175</Chemfuel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_ExplosivesRangedTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<weaponTags>
+		<li>HeavyExplosive_ANLA</li>
+	 </weaponTags>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_GrenadeLauncher</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>31.9</range>
+				<minRange>3.5</minRange>
+        <forcedMissRadius>1.9</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ANLAShot_GrenadeLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>body</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_ExpRange_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_GrenadeLauncher</defName>
+    <label>grenade launcher round</label>
+    <graphicData>
+      <texPath>Things/Projectile/InfernoCannonShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Bomb_ANLA_Grenadelauncher</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.9</explosionRadius>
+    </projectile>
+  </ThingDef>
+
+  
+</Defs>

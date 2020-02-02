@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: gladius -->
+  <!-- EN: A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons. -->
+  <MeleeWeapon_Gladius.description>A short sword of ancient roman origin &amp; design. Good for stabbing or slashing. It's light and nimble in the hands, which lets it beat slower weapons. The blade itself is a good &amp; balanced all-around slashing weapon.</MeleeWeapon_Gladius.description>
+  
+  <!-- EN: longsword -->
+  <!-- EN: The ancient weapon of kings, the longsword can be used for slashing or stabbing. -->
+  <MeleeWeapon_LongSword.description>The ancient forged blade of knights &amp; kings from medieval worlds. The longsword can be used for slashing or stabbing, but is slightly slow to swing. However it's deadly if given to a good melee weapon wielder.</MeleeWeapon_LongSword.description>
+  
+  <!-- EN: mace -->
+  <!-- EN: A refined club, engineered for efficient swinging and deadly impacts. -->
+  <MeleeWeapon_Mace.description>A simple but refined club or truncheon, engineered for efficient swinging and painful impacts for either lethal force or in non-lethal cases. Effective at taking down and capturing prisoners or for subduing trouble-makers.</MeleeWeapon_Mace.description>
+  
+</LanguageData>

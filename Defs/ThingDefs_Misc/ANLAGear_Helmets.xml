@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================================== Round Helmets ====================================-->
+	
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_RoundHelmet_ANLA</defName>
+    <label>round helmet</label>
+    <description>A basic round looking helmet which gives a small decent defense against sharp attacks &amp; blunt damage. Not as protective when compared to the simple helmet, but does the job.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Armor/RoundHelmet/RoundHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1.0</Mass>
+      <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/RoundHelmet/RoundHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  <!-- ================================== Plate Helms ====================================-->
+	
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_PlateHelmet_ANLA</defName>
+    <label>plate helm</label>
+    <description>A solid plate helmet that gives a good amount of protection that covers some parts of the head, but does cover not most of the face.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Armor/PlateHelm/PlateHelm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+		<costStuffCount>65</costStuffCount>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2.0</Mass>
+      <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+	  <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3.2</EquipDelay>
+    </statBases>
+    <recipeMaker>
+	  <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/PlateHelm/PlateHelm</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+    <!-- ================================== Riot Helmets ====================================-->
+  
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_RiotHelmet_ANLA</defName>
+    <label>riot helmet</label>
+    <description>A heavy riot helmet with a ballistic face shield covering the entire face, reinforced with plasteel. Effective against blunt weapons &amp; protecting the wearer's head.</description>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+	  <researchPrerequisite>FlakArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/RiotHelmet/RiotHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<generateCommonality>0.35</generateCommonality>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>135</MaxHitPoints>
+      <Mass>2.2</Mass>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+	  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3.2</EquipDelay>
+    </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+    <costList>
+      <ComponentIndustrial>4</ComponentIndustrial>
+			<Plasteel>10</Plasteel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/RiotHelmet/RiotHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialMilitaryAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="PirateScavTierBase">
+    <defName>Thrasher_Heavy_ANLA</defName>
+    <label>heavy thrasher</label>
+    <race>Human</race>
+	<combatPower>95</combatPower>
+	<itemQuality>Normal</itemQuality>
+    <canBeSapper>false</canBeSapper>
+    <apparelMoney>
+      <min>650</min>
+      <max>900</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Outlander</li>
+      <li>IndustrialMilitaryBasic</li>
+	</apparelTags>
+	<apparelRequired>
+      <li>Apparel_SimpleShieldBelt_ANLA</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>150</min>
+      <max>240</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+      <li>MedievalMeleeDecent</li>
+	  <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="PirateBase">
+    <defName>PirateOutlaw_ANLA</defName>
+    <label>pirate outlaw</label>
+    <race>Human</race>
+    <combatPower>80</combatPower>
+    <maxGenerationAge>65</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>750</min>
+      <max>1500</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>500</min>
+      <max>900</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>Revolver</li>
+	  <li>PirateOutlaw_ANLA</li>
+    </weaponTags>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>
+      <min>700</min>
+      <max>1200</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+	  <li>Advanced</li>
+    </techHediffsTags>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>40</min>
+            <max>120</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+</Defs>

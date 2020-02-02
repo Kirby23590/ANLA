@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: charge lance -->
+  <!-- EN: A pulse-charged rail-assisted lance weapon. It fires a single shot at high velocity, charging it with unstable energy as it leaves the acceleration rail. -->
+  <Gun_ChargeLance.description>A pulse-charged rail-assisted lance weapon used by sentinel lancers. It fires a single shot at high velocity, charging it with powerful but unstable energy as it leaves the acceleration rail, able to instantly kill or even sever limbs of a unfortunate target.\n\nMany of these weapons were reverse-engineered to be used by human hands against the mechanoids in the mechanoid wars.</Gun_ChargeLance.description>
+  
+  <!-- EN: charge rifle -->
+  <!-- EN: A charged-shot assault rifle. Pulse-charge technology charges each shot with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done. -->
+  <Gun_ChargeRifle.description>A charged-shot energy assault rifle. The pulse charges each shot with unstable energy as it leaves the barrel. Released on impact, charged energy has greatly increased damage done.\n\nBut it slowly charges up resulting in a lower fire-rate. However it greatly does the job done.</Gun_ChargeRifle.description>
+  
+</LanguageData>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////// Proper Shotgun Patches -->
+
+<!-- ///////////////////////////////// Shotgun Pellets -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="ANLABullet_PumpShotgun"]</xpath>
+        <value>
+            <li Class="ProperShotguns.ShotgunExtension">
+                <pelletCount>7</pelletCount>
+            </li>
+        </value>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="ANLABullet_ChainShotgun"]</xpath>
+        <value>
+            <li Class="ProperShotguns.ShotgunExtension">
+                <pelletCount>5</pelletCount>
+            </li>
+        </value>
+    </match>
+</Operation>
+
+<!-- ///////////////////////////////// Shotgun Bullet Sprites -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ANLABullet_PumpShotgun" or defName="ANLABullet_ChainShotgun"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+        </value>
+    </match>
+</Operation>
+
+</Patch>

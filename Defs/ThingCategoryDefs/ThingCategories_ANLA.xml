@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Melee Weapons -->
+
+    <ThingCategoryDef>
+      <defName>WeaponsMelee_Blades_ANLA</defName>
+      <label>blades</label>
+      <parent>WeaponsMelee</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsMelee_Knives_ANLA</defName>
+      <label>knives</label>
+      <parent>WeaponsMelee_Blades_ANLA</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsMelee_Blunts_ANLA</defName>
+      <label>blunt instruments</label>
+      <parent>WeaponsMelee</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsMelee_Polearms_ANLA</defName>
+      <label>polearms</label>
+      <parent>WeaponsMelee</parent>
+    </ThingCategoryDef>
+	
+  <!-- Ranged Weapons -->
+
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_Bows_ANLA</defName>
+      <label>bows</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_Throwing_ANLA</defName>
+      <label>throwing weapons</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+    <ThingCategoryDef>
+      <defName>WeaponsRanged_Handguns_ANLA</defName>
+      <label>handguns</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_Shotguns_ANLA</defName>
+      <label>shotguns</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_SMG_ANLA</defName>
+      <label>submachine guns</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_Rifles_ANLA</defName>
+      <label>rifles</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_AR_ANLA</defName>
+      <label>assault rifles</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_SRifles_ANLA</defName>
+      <label>sniper rifles</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_MG_ANLA</defName>
+      <label>machine guns</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_ExpRange_ANLA</defName>
+      <label>explosive weapons</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_RPG_ANLA</defName>
+      <label>rocket launchers</label>
+      <parent>WeaponsRanged_ExpRange_ANLA</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_EnergyWeapons_ANLA</defName>
+      <label>energy weapons</label>
+      <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>WeaponsRanged_ChargeGuns_ANLA</defName>
+      <label>charge weapons</label>
+      <parent>WeaponsRanged_EnergyWeapons_ANLA</parent>
+    </ThingCategoryDef>
+
+  <!-- Misc -->
+  
+    <ThingCategoryDef>
+      <defName>Apparel_ShieldBelts_ANLA</defName>
+      <label>personal shields &amp; belts</label>
+      <parent>Apparel</parent>
+    </ThingCategoryDef>
+  
+</Defs>

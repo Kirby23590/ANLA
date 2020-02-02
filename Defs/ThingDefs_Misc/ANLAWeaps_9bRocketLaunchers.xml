@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="ANLA_BaseMakeableRPG" ParentName="BaseGunWithQuality" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableGunsmithModern_ANLA</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- ==================== RPG T3 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_RPGRocketLauncher_ANLA</defName>
+    <label>RPG</label>
+    <description>A rocket propelled grenade launcher, it has infinite uses &amp; has long range, but is very inaccurate. Its more effective against stationary targets &amp; structures other than moving targets.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Weapons/ExplosiveGuns/RPG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <WorkToMake>68000</WorkToMake>
+      <Mass>8</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags Inherit="False">
+	  <li>RocketLauncher_ANLA</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+	<costList>
+		<Steel>100</Steel>
+		<Chemfuel>200</Chemfuel>
+		<ComponentIndustrial>9</ComponentIndustrial>
+	</costList>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<recipeMaker>
+	  <researchPrerequisite>Resarch_RocketLaunchersTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_RPG</defaultProjectile>
+        <forcedMissRadius>2.0</forcedMissRadius>
+        <warmupTime>4.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>35.9</range>
+		<minRange>1.9</minRange>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>body</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.0</power>
+        <cooldownTime>2.55</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	<generateCommonality>0.4</generateCommonality>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_RPG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_RPG</defName>
+    <label>RPG rocket</label>
+    <graphicData>
+      <texPath>Weapons/Projectiles/RPG_Rocket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.9</explosionRadius>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Single Use Only ========================== -->
+  
+  <!-- ==================== Rocket Launcher T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableRPG">
+    <defName>Gun_SingleRocket_ANLA</defName>
+    <label>rocket launcher</label>
+    <description>A single-use &amp; accurate single-shot rocket launcher that fires a single powerful rocket with an large blast radius. Great against a group of enemies or stationary targets.\n\nAfter firing, the empty rocket launcher is disposed &amp; thrown away, so use it carefully &amp; wisely.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Weapons/ExplosiveGuns/RocketLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <WorkToMake>58000</WorkToMake>
+      <MarketValue>1000</MarketValue>
+      <Mass>7</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags Inherit="False">
+      <li>RocketLauncher_ANLA</li>
+    </weaponTags>
+	<costList>
+		<Steel>100</Steel>
+		<Chemfuel>150</Chemfuel>
+		<ComponentIndustrial>7</ComponentIndustrial>
+	</costList>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<recipeMaker>
+	  <researchPrerequisite>Resarch_RocketLaunchersTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_Rocket</defaultProjectile>
+        <forcedMissRadius>1.0</forcedMissRadius>
+        <warmupTime>4.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>35.9</range>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13.5</power>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_RPG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_Rocket</defName>
+    <label>rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb_ANLA_RocketLauncher</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>3.5</explosionRadius>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

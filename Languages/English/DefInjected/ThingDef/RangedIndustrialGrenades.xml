@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: EMP grenades -->
+  <!-- EN: Electromagnetic pulse grenades damaging to electronic equipment. -->
+  <Weapon_GrenadeEMP.description>Electromagnetic pulse grenades damaging to electronic equipment. Can temporally disable shield belts or to stun turrets &amp; mechanoids.\n\nHas no effect and is not very effective against living organisms such as humanoids or animal creatures.</Weapon_GrenadeEMP.description>
+  
+  <!-- EN: frag grenades -->
+  <!-- EN: Old-school fragmentation grenades. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. -->
+  <Weapon_GrenadeFrag.description>Old-school fragmentation hand grenades. They can be thrown at a short distance, where they'll explode, damaging anything caught in it's small blast radius\n\nEffective against stationary targets, but is not very effective at destroying structures.</Weapon_GrenadeFrag.description>
+  
+  <!-- EN: molotov cocktails -->
+  <!-- EN: Glass bottles filled with flammable liquid, with a burning cloth in the neck. A favorite weapon of hooligans and desperate warriors from rim to rim. -->
+  <Weapon_GrenadeMolotov.description>Bottles filled with flammable liquid, with a burning cloth in the neck. Can effectively burn wooden walls, grass or to flush enemies out of cover.\n\nA favorite weapon of hooligans, desperate warriors &amp; partisans in the rims &amp; in war-torn worlds.</Weapon_GrenadeMolotov.description>
+  
+</LanguageData>

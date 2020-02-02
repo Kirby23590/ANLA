@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- ==================== Tier 1 Machine Guns ========================== -->
+
+  <!-- ==================== LSW T1 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+		<defName>Gun_LSW_ANLA</defName>
+		<label>LSW</label>
+		<description>A military light support weapon for long range fire support &amp; suppression. It has a longer range and better accuracy than the LMG, but deals less damage.</description>
+		<graphicData>
+			<texPath>Weapons/HeavyMG/LSW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>41000</WorkToMake>
+			<Mass>7.5</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.61</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.34</AccuracyLong>
+			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>85</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_LSW</defaultProjectile>
+				<warmupTime>1.88</warmupTime>
+				<range>31.9</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>7</burstShotCount>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>MachineGun_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_MG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_LSW</defName>
+    <label>LSW bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Squad Automatic Weapon T1 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_SquadAutomaticWeapon_ANLA</defName>
+    <label>squad automatic weapon</label>
+    <description>A military squad machine gun made &amp; built for suppression and covering fire in open areas. It fires fifteen rounds, and has a reasonable fire-rate. But is inaccurate at long ranges.</description>
+    <graphicData>
+      <texPath>Weapons/HeavyMG/SawLMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>7.5</Mass>
+      <AccuracyTouch>0.43</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.42</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>110</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MachineGunTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>GunHeavy</li>
+	  <li>MachineGun_ANLA</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_SquadAutoWeapon</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>15</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>2.45</cooldownTime>
+      </li>
+	  <li>
+        <label>body</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.55</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_MG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_SquadAutoWeapon</defName>
+    <label>squad automatic weapon bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>0.9</stoppingPower>
+	  <armorPenetrationBase>0.16</armorPenetrationBase>
+      <speed>72</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 2 Machine Guns ========================== -->
+
+  <!-- ==================== GPMG T2 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_GPMG_ANLA</defName>
+    <label>GPMG</label>
+    <description>A military general-purpose medium machine gun suited for open fields or in tight closed spaces. Its strong and has good damage. Fires nine bullets in bursts, its however inaccurate in shooting at longer ranges.</description>
+    <graphicData>
+      <texPath>Weapons/HeavyMG/GPMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.47</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.37</AccuracyLong>
+      <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>11</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MachineGunTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>GunHeavy</li>
+	  <li>MachineGun_ANLA</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_GPMG</defaultProjectile>
+        <warmupTime>1.95</warmupTime>
+        <range>29.9</range>
+        <burstShotCount>9</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_DeltaRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+	  <li>
+        <label>body</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_MG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_GPMG</defName>
+    <label>GPMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+	  <stoppingPower>1</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Heavy Machine Gun T2 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_HeavyMachineGun_ANLA</defName>
+    <label>heavy machine gun</label>
+    <description>A heavy weight machine gun for fire support. It has high firepower &amp; has good range, but is very cumbersome to wield and fires only seven rounds in bursts.</description>
+    <graphicData>
+      <texPath>Weapons/HeavyMG/HMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>8.5</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>2.55</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MachineGunTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>GunHeavy</li>
+	  <li>MachineGun_ANLA</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_HeavyMachineGun</defaultProjectile>
+        <warmupTime>2.05</warmupTime>
+        <range>29.9</range>
+        <burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_FreedomRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+	  <li>
+        <label>body</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_MG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_HeavyMachineGun</defName>
+    <label>heavy machine gun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+	  <stoppingPower>1.4</stoppingPower>
+      <speed>73</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Rapid Machine Gun T2 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_RapidMachineGun_ANLA</defName>
+    <label>rapid machine gun</label>
+    <description>A heavy rapid-fire support machine gun, it has an very high-fire rate built for suppressive fire. Has low accuracy &amp; fires a hail of twenty bullets.</description>
+    <graphicData>
+      <texPath>Weapons/HeavyMG/RapidMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>9.0</Mass>
+      <AccuracyTouch>0.35</AccuracyTouch>
+      <AccuracyShort>0.33</AccuracyShort>
+      <AccuracyMedium>0.24</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>2.45</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>135</Steel>
+      <ComponentIndustrial>13</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>Resarch_MachineGunTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>GunHeavy</li>
+	  <li>MachineGun_ANLA</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_RapidMG</defaultProjectile>
+        <warmupTime>2.4</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>20</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+	  <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+	  <li>
+        <label>body</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.5</power>
+        <cooldownTime>2.75</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_MG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_RapidMG</defName>
+    <label>rapid machine gun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.16</armorPenetrationBase>
+      <speed>78</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 3 Machine Guns ========================== -->
+  
+  <!-- ==================== Automatic Rifle T3 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_AutomaticRifle_ANLA</defName>
+    <label>automatic rifle</label>
+    <description>A combination between a long-ranged rifle and a automatic machine gun. It has high firepower with fine accuracy &amp; fires six bullets, but is heavy and slow to reload.\n\nPutting it in a disadvantage with multiple enemies in close-range.</description>
+    <graphicData>
+      <texPath>Weapons/HeavyMG/AutomaticRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>62000</WorkToMake>
+      <Mass>9.2</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.66</AccuracyMedium>
+      <AccuracyLong>0.54</AccuracyLong>
+      <RangedWeapon_Cooldown>2.58</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>14</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>GunHeavy</li>
+	  <li>MachineGun_ANLA</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_AutomaticRifle</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>37.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <soundCast>ANLAShot_AutomaticRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+	  <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+	  <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.5</power>
+        <cooldownTime>2.75</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_MG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_AutomaticRifle</defName>
+    <label>automatic rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+	  <armorPenetrationBase>0.25</armorPenetrationBase>
+	  <stoppingPower>1.5</stoppingPower>
+      <speed>82</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Mini-Autocannon T3 ========================== -->
+  
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_MiniAutocannon_ANLA</defName>
+    <label>mini autocannon</label>
+    <description>A powerful heavy barreled machine gun that fires large-caliber rounds. Very unwieldy &amp; has a long cool down, but is accurate and has strong armor penetration.\n\nThanks to some crazy weaponsmiths, there are man-portable and hand-held variants despite it being impractical for a person to wield such an weapon.</description>
+    <graphicData>
+      <texPath>Weapons/HeavyMG/Autocannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.58</AccuracyMedium>
+      <AccuracyLong>0.49</AccuracyLong>
+      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>175</Steel>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+	  <li>Centepede_Weapon_ANLA</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_MiniAutoCannon</defaultProjectile>
+        <warmupTime>3.1</warmupTime>
+        <range>33.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+	  <li>
+        <label>body</label>
+		<labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>3.15</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_MG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_MiniAutoCannon</defName>
+    <label>mini-auttocannon shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+	  <stoppingPower>2.5</stoppingPower>
+	  <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>86</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+</Defs>

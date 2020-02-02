@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Craft simple manually-operated guns like revolvers, pump shotguns, bolt-action rifles, and incendiary launchers. -->
+  <Gunsmithing.description>Craft simple and potent firearms like pistols, revolvers and carbines in the machining table.</Gunsmithing.description>
+  
+  <!-- EN: Craft low-power blowback-operated guns like autopistols and machine pistols. -->
+  <BlowbackOperation.description>Craft low-power blowback-operated automatic firearms like machine pistols, submachine guns and assault carbines at the machining table.</BlowbackOperation.description>
+  
+  <!-- EN: Craft high-power guns like chain shotguns, LMGs, and heavy SMGs. -->
+  <GasOperation.description>Craft high-power automatic and semi-automatic firearms like assault rifles, LMGs, and stronger submachine guns in the machining table or at the modern gunsmith's table.</GasOperation.description>
+  
+</LanguageData>

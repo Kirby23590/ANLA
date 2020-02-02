@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: advanced helmet -->
+  <Apparel_AdvancedHelmet.label>combat helmet</Apparel_AdvancedHelmet.label>
+  <!-- EN: A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons. -->
+  <Apparel_AdvancedHelmet.description>A lightweight combat helmet made with kevlar, reinforced with steel and components to protect the wearer's frontal part of the skull. Not effective against blunt weapons.</Apparel_AdvancedHelmet.description>
+  
+  <!-- EN: marine helmet -->
+  <Apparel_PowerArmorHelmet.label>power helmet</Apparel_PowerArmorHelmet.label>
+  <!-- EN: A marine armor helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines. -->
+  <Apparel_PowerArmorHelmet.description>A power armor helmet worn by elite marines, with a built-in status computer and layered plasteel-weave plates.\n\nArmor and helmets like this is often used by heavy assault shock troopers and imperial janissaries of advanced civilizations, rapid-incursion orbital drop pod assault troopers and space navy marines.</Apparel_PowerArmorHelmet.description>
+
+  <!-- EN: simple helmet -->
+  <!-- EN: A simple helmet which gives moderate protection against sharp attacks. Not effective against blunt weapons. -->
+  <Apparel_SimpleHelmet.description>A simple standard-issue helmet which gives moderate protection against sharp attacks. Somewhat protective against blunt weapons.</Apparel_SimpleHelmet.description>
+  
+</LanguageData>

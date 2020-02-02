@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Tier 3: Ultra-Modernization & Energy weapons ===================================-->
+
+  
+  <!--===== Column 1 ====-->
+  
+  
+  <ResearchProjectDef>
+	<defName>Resarch_ShieldBeltsTierII_ANLA</defName>
+	<label>high-energy shield belts</label>
+	<description>Learn how to build more stronger and faster recharging advance shield belts or higher-energy but slower to charge turtle shield belts for brawlers.\n\nNote that they both require uranium to build and still can't be used with ranged weapons.</description>
+	<baseCost>2200</baseCost>
+	<techLevel>Spacer</techLevel>
+	<tab>Main_ANLA</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<prerequisites>
+      <li>ShieldBelt</li>
+    </prerequisites>
+	<researchViewX>7</researchViewX>
+	<researchViewY>0.0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_RifleTierIII_ANLA</defName>
+	<label>military rifles</label>
+	<description>Build strong military grade assault rifles which can pack deadly firepower such as freedom rifles and military combat rifles in the modern gunsmith's table.</description>
+	<baseCost>1200</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>4</researchViewX>
+	<researchViewY>1.2</researchViewY>
+	<prerequisites>
+      <li>Resarch_RifleTierII_ANLA</li>
+	  <li>PrecisionRifling</li>
+    </prerequisites>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_SniperTierIII_ANLA</defName>
+	<label>heavy sniper rifles</label>
+	<description>Craft powerful and hard hitting powerful anti-material rifles while having superior armor penetration capabilities from extreme long ranges.</description>
+	<baseCost>2200</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>5</researchViewX>
+	<researchViewY>0.6</researchViewY>
+	<prerequisites>
+      <li>Resarch_SniperTierII_ANLA</li>
+	  <li>Resarch_HandgunsTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_RocketLaunchersNBombsTierII_ANLA</defName>
+	<label>destructive weapons</label>
+	<description>Build triple rocket launchers and charge bombs to devastate masses of legions or hordes of enemies or against one stationary heavily armored targets, such as centipedes.</description>
+	<baseCost>6000</baseCost>
+	<techLevel>Spacer</techLevel>
+	<tab>Main_ANLA</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<researchViewX>6</researchViewX>
+	<researchViewY>3.6</researchViewY>
+	<prerequisites>
+	  <li>MultibarrelWeapons</li>
+      <li>Resarch_RocketLaunchersTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  
+  <!--===== Column 2 ====-->
+  
+  
+  <ResearchProjectDef>
+	<defName>Resarch_ChargedShotPartII_ANLA</defName>
+	<label>advanced pulse-charged weapons</label>
+	<description>Grasp the advanced pulse-charged projectile weaponry. Allowing you to build more powerful pulse-charge ranged weapons in the fabrication bench.\n\nNote some of these weapons will require uranium.</description>
+	<baseCost>4000</baseCost>
+	<techLevel>Spacer</techLevel>
+	<tab>Main_ANLA</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<researchViewX>6</researchViewX>
+	<researchViewY>1.2</researchViewY>
+	<prerequisites>
+      <li>ChargedShot</li>
+	  <li>AdvancedFabrication</li>
+	  <li>Resarch_RifleTierIII_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_MechanoidWeapons_ANLA</defName>
+	<label>sentinel weapons reverse engineering</label>
+	<description>Learn how to make weapons in the fabrication bench used by mechanoid sentinels allowing to build their assault charge blasters and other weapons that can be used by human hands.</description>
+	<baseCost>3000</baseCost>
+	<techLevel>Spacer</techLevel>
+	<tab>Main_ANLA</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<researchViewX>6</researchViewX>
+	<researchViewY>2.4</researchViewY>
+	<prerequisites>
+      <li>ChargedShot</li>
+	  <li>AdvancedFabrication</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_ChargedShotPartIII_ANLA</defName>
+	<label>pulse-charge lances</label>
+	<description>Build rail-assisted pulse rifles that have high killing power and high armor penetration allowing you to build sentinel lancer charge lances and long-ranged charge lance sniper rifles.</description>
+	<baseCost>3500</baseCost>
+	<techLevel>Spacer</techLevel>
+	<tab>Main_ANLA</tab>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<researchViewX>7</researchViewX>
+	<researchViewY>2.4</researchViewY>
+	<prerequisites>
+      <li>Resarch_ChargedShotPartII_ANLA</li>
+	  <li>Resarch_MechanoidWeapons_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  
+  <!--===== Melee ====-->
+  
+  <ResearchProjectDef>
+	<defName>Resarch_HeavyMeleeTierIII_ANLA</defName>
+	<label>heavy melee weapons</label>
+	<description>Make heavier melee weapons such as mauls or greataxes in the smithy.\n\nThey are powerful when they hit, but misses when wielding one are very punishing.</description>
+	<baseCost>1000</baseCost>
+	<techLevel>Medieval</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>2</researchViewX>
+	<researchViewY>4.7</researchViewY>
+	<prerequisites>
+      <li>Resarch_MeleeBladeAndSpearsTierII_ANLA</li>
+	  <li>Resarch_MeleeBluntTierII_ANLA</li>
+	  <li>Resarch_MeleeAxesTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</Defs>

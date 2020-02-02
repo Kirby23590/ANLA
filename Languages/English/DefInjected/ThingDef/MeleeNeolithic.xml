@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: club -->
+  <!-- EN: A shaped stick, heavy at one end, for bashing enemies to death. This weapon is so old it's part of human biology. Evolutionary biologists say that a major reason humans can tilt our wrists side-to-side (instead of just forward-and-back like other primates) is to be able to better swing a club. -->
+  <MeleeWeapon_Club.description>A shaped heavy stick, for bashing enemies to death. The oldest weapon thats a part of human history in the very earliest times dating from the early prehistoric ages &amp; the stone age. It's very primitive, but is effective for what it does.</MeleeWeapon_Club.description>
+  
+  <!-- EN: ikwa -->
+  <!-- EN: A short spearhandle attached to a long bladed point, designed to be driven into vital organs with a quick thrust. -->
+  <MeleeWeapon_Ikwa.description>A short tribal spearhead dagger that is similar to the iklwa. It was designed to be driven into vital organs with a hard thrust that could kill or mortally wound an armored adversary in battle.</MeleeWeapon_Ikwa.description>
+  
+  <!-- EN: knife -->
+  <!-- EN: One of mankind's oldest manufactured objects. The knife has taken many forms, but the concept has always remained the same: A handle for holding and a sharp edge for cutting. -->
+  <MeleeWeapon_Knife.description>One of the many of humanity's oldest tools &amp; weapons. The knife has taken many forms &amp; use, but the idea &amp; concept has always remained the same. A handle for holding and a edge for cutting.</MeleeWeapon_Knife.description>
+  
+  <!-- EN: spear -->
+  <!-- EN: A polearm tipped with a sharp point for stabbing opponents. -->
+  <MeleeWeapon_Spear.description>One of the oldest weapons used in ancient times, the simple neolithic polearm that's tipped with a sharp point historically used for hunting.\n\nIt was also mainly used for stabbing against armored opponents in melee combat.</MeleeWeapon_Spear.description>
+  
+</LanguageData>

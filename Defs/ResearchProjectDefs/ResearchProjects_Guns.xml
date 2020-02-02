@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Tier 1: Pre-Firearms & Muskets ===================================-->
+
+  <!--===== Column 1 ====-->
+  
+  <ResearchProjectDef>
+    <defName>Resarch_BasicGunsmithing_ANLA</defName>
+    <label>gunpowder weapons</label>
+    <description>Allow construction &amp; crafting of early gunpowder firearms that can be built in the smithy like flintlock pistols and matchlocks.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+	<prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3.4</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_Muskets_ANLA</defName>
+	<label>smoothbore &amp; rifling</label>
+	<description>Learn how to build and make more potent steamworld gunpowder firearms in the smithy like muskets and blunderbusses.\n\nRequired for crafting of shotguns and rifles.</description>
+	<baseCost>250</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<prerequisites>
+      <li>Resarch_BasicGunsmithing_ANLA</li>
+    </prerequisites>
+	<researchViewX>0</researchViewX>
+	<researchViewY>2.7</researchViewY>
+  </ResearchProjectDef>
+
+  
+  
+  <ResearchProjectDef>
+	<defName>Resarch_GunsTierI_ANLA</defName>
+	<label>interchangeable gun parts</label>
+	<description>Learn how to make use of interchangeable parts to make better firearms.\n\nExamples like bullpups, cowboy repeaters, shotguns and carbine rifles which also unlocks the modern gunsmith's table.</description>
+	<baseCost>1000</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<prerequisites>
+      <li>Gunsmithing</li>
+	  <li>Resarch_Muskets_ANLA</li>
+    </prerequisites>
+	<researchViewX>1</researchViewX>
+	<researchViewY>2.9</researchViewY>
+	<discoveredLetterTitle>About: Modern Gunsmith's Table</discoveredLetterTitle>
+    <discoveredLetterText>By researching interchangeable gun parts, you have learned about making firearms and gunsmithing from the 20th &amp; 21th century.\n\nThese weapons that you can craft are separated into tiers and different types. Some are better in long-range sniping such as sniper rifles while others excel in mid-range or close quarters such as shotguns and submachine guns.\n\nHowever they require their respective researches to be able to be crafted in the gunsmith's table, machining table, fabrication table or in the smithy.\nAnd some weapons are locked and require a second research to be craftable as well.</discoveredLetterText>
+    <discoveredLetterMinDifficulty>0</discoveredLetterMinDifficulty>
+  </ResearchProjectDef>
+  
+</Defs>

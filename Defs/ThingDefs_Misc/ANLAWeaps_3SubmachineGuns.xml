@@ -1,0 +1,1423 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Tier 1 SMGs ========================== -->
+
+  <!-- ==================== Mini SMG T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_MiniSMG_ANLA</defName>
+    <label>mini SMG</label>
+    <description>A small and compact machine pistol. It has a very short range &amp; lacks strong punch, but fires five bullets in a burst to make up for it's weakness.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/MiniSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>38</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_MiniSMG</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>15.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>ScavGun_ANLA</li>
+			<li>VilagerWeap_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5.5</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_MiniSMG</defName>
+    <label>mini SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>4</damageAmountBase>
+      <speed>56</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Automatic Pistol T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_AutomaticPistol_ANLA</defName>
+    <label>automatic pistol</label>
+    <description>A ancient type of sidearm that is capable of firing fully automatically. It has short range &amp; is weak. The high fire rate and the four round burst makes up for it.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/AutomaticPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>21800</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.54</AccuracyTouch>
+      <AccuracyShort>0.54</AccuracyShort>
+      <AccuracyMedium>0.32</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_AutomaticPistol</defaultProjectile>
+        <warmupTime>0.65</warmupTime>
+        <range>17.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>ScavGun_ANLA</li>
+			<li>VilagerWeap_ANLA</li>
+			<li>TownGuard_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_AutomaticPistol</defName>
+    <label>automatic pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>4</damageAmountBase>
+	  <armorPenetrationBase>0.8</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== British Commando's SMG T1 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_BritishSMG_ANLA</defName>
+    <label>british commando's SMG</label>
+    <description>A light-weight military submachine gun used by british commandos, paratroopers along with resistance fighters &amp; insurgent groups. It has short-range &amp; a good fire-rate, and fires in a four round burst.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/BritishSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+	<generateCommonality>0.7</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_BritshSubmachineGun</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>23.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+			<li>TownGuard_ANLA</li>
+			<li>ScavGun_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.7</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.35</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_BritshSubmachineGun</defName>
+    <label>british commando's SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tactical Machine Pistol T1 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_TMP_ANLA</defName>
+    <label>tactical machine pistol</label>
+    <description>A compact police micro-machine pistol. Its not strong and has shorter range &amp; is more inaccurate than the machine pistol. But makes up for it's higher rate of fire.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/TMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+	<generateCommonality>0.5</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>47</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_TMPMachinePistol</defaultProjectile>
+        <warmupTime>0.55</warmupTime>
+        <range>17.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.4</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_TMPMachinePistol</defName>
+    <label>tactical machine pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Burst Pistol T1 ========================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_BurstPistol_ANLA</defName>
+    <label>burst pistol</label>
+    <description>A medium-sized police sidearm that fires in a three-round burst, with a stock attached that it comes with. It has short range with a decent fire-rate and some stopping power.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/BurstPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+	<generateCommonality>0.3</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_GunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+		</weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_BurstPistol</defaultProjectile>
+        <warmupTime>0.72</warmupTime>
+        <range>21.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.7</power>
+        <cooldownTime>2.24</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.4</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_BurstPistol</defName>
+    <label>burst pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  <!-- ==================== Tier 2 SMGs ========================== -->
+  
+  <!-- ==================== Street SMG T2 ========================== -->
+  
+	<ThingDef ParentName="ANLA_BaseMakeableGun">
+		<defName>Gun_StreetSMG_ANLA</defName>
+		<label>street machine pistol</label>
+		<description>A personal defense machine pistol, a favorite of urbworld street gangs. It has short range but with an high rate of fire.</description>
+		<graphicData>
+			<texPath>Weapons/SMGs/ClassicSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.36</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>0.88</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_StreetMachinePistol</defaultProjectile>
+				<warmupTime>0.65</warmupTime>
+				<range>23.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.10</cooldownTime>
+      </li>
+    </tools>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>TownGuard_ANLA</li>
+			<li>PirateOutlaw_ANLA</li>
+		</weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_StreetMachinePistol</defName>
+    <label>street machine pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+	  <stoppingPower>0.9</stoppingPower>
+      <speed>58</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== PDW T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_PDW_ANLA</defName>
+    <label>PDW</label>
+    <description>A military personal defense weapon. It fires four bullets in a burst, and deals decent damage with its damage per second and good rate of fire along with armor penetration. But has low stopping power.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/PDWGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+	<generateCommonality>0.6</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>2.7</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PDWSubmachineGun</defaultProjectile>
+        <warmupTime>0.75</warmupTime>
+        <range>23.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.4</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PDWSubmachineGun</defName>
+    <label>PDW bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <stoppingPower>0.7</stoppingPower>
+	  <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Navy SMG T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_NavySMG_ANLA</defName>
+    <label>navy SMG</label>
+    <description>A versatile military submachine gun suited for close quarters or in mid-range combat. It has got good range and a fast fire-rate, and decent damage for it's type.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/NavySMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+	<generateCommonality>0.8</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_NavySMG</defaultProjectile>
+        <warmupTime>0.74</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.6</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_NavySMG</defName>
+    <label>navy SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+	  <stoppingPower>0.9</stoppingPower>
+      <speed>72</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Warsaw PDW T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_WarsawPDW_ANLA</defName>
+    <label>warsaw PDW</label>
+    <description>A combat personal defense machine pistol used by soldiers from the warsaw pact. It has high fire-rate &amp; is quick to fire, but has very short range thats suited for close combat.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/WarsawPDW</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+	<generateCommonality>0.3</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.18</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_WarsawPDW</defaultProjectile>
+        <warmupTime>0.68</warmupTime>
+        <range>17.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.4</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.8</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_WarsawPDW</defName>
+    <label>warsaw PDW bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <armorPenetrationBase>0.21</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Medium Machine Pistol T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_MediumMachinePistol_ANLA</defName>
+    <label>medium machine pistol</label>
+    <description>A medium slug-caliber compact submachine pistol. A favorite in urbworlds in the criminal underworld. It has short range and has sub-par accuracy, but has good damage and firepower.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/MediumMP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_MediumMachinePistol</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>19.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>PirateOutlaw_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.7</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.6</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_MediumMachinePistol</defName>
+    <label>medium machine pistol bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <stoppingPower>1.4</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Grease Submachine Gun T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_GreaseSMG_ANLA</defName>
+    <label>grease submachine gun</label>
+    <description>A slug-caliber medium submachine gun, it fires four bullets in a burst. With good damage and having medium range, but it has mediocre accuracy at longer ranges.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/GreaseSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>3.7</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_SlugSMG</defaultProjectile>
+        <warmupTime>0.89</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	    <weaponTags>
+			<li>MercGunnerGun_ANLA</li>
+			<li>PirateOutlaw_ANLA</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.17</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.22</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_SlugSMG</defName>
+    <label>grease submachine gun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+	  <armorPenetrationBase>0.21</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Drum SMG T2 ========================== -->
+  
+	<ThingDef ParentName="ANLA_BaseMakeableGun">
+		<defName>Gun_DrumSMG_ANLA</defName>
+		<label>drum SMG</label>
+		<description>A drum magazine-fed blowback submachine gun. It fires in long bursts. However it is short-ranged &amp; has weak firepower, but compensates for it's fast fire-rate &amp; burst of six bullets.</description>
+		<graphicData>
+			<texPath>Weapons/SMGs/DrumSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.55</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_DrumSMG</defaultProjectile>
+				<warmupTime>0.95</warmupTime>
+				<range>23.9</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>Shot_MachinePistol</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+	  <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+    </tools>
+	    <weaponTags>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_DrumSMG</defName>
+    <label>drum SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+	  <armorPenetrationBase>0.11</armorPenetrationBase>
+      <speed>73</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Carbine Submachine Gun T2 ========================== -->
+
+  <ThingDef ParentName="ANLA_BaseMakeableGun">
+    <defName>Gun_CarbineSMG_ANLA</defName>
+    <label>carbine submachine gun</label>
+    <description>A pistol carbine that has been modified to fire in full-auto. Fires four bullets but has less range than the carbine rifle, but trades it for a higher rate of fire.</description>
+    <graphicData>
+      <texPath>Weapons/SMGs/CarbineSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+	<generateCommonality>0.8</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>3.7</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>72</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_CarbineSMG</defaultProjectile>
+        <warmupTime>0.97</warmupTime>
+        <range>24.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.5</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.4</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+	    <weaponTags>
+		    <li>MercGunnerGun_ANLA</li>
+			<li>MercVetGun_ANLA</li>
+		</weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_CarbineSMG</defName>
+    <label>carbine SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+	  <stoppingPower>0.8</stoppingPower>
+      <speed>74</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  <!-- ==================== Trench SMG T2 ========================== -->
+  
+	<ThingDef ParentName="ANLA_BaseMakeableGun">
+		<defName>Gun_TrenchSMG_ANLA</defName>
+		<label>trench SMG</label>
+		<description>A blowback submachine gun used in clearing trenches, equipped with an extended mag. Its got a good fire rate &amp; fires six bullets in burst, making it a good flanking weapon or in mid-range combat.</description>
+		<graphicData>
+			<texPath>Weapons/SMGs/TrenchSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<generateCommonality>0.6</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>4.0</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>85</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_TrenchSMG</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>23.9</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+	  <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+    </tools>
+	    <weaponTags>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_TrenchSMG</defName>
+    <label>trench SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+	  <stoppingPower>0.8</stoppingPower>
+      <speed>73</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 3 SMGs ========================== -->
+  
+  <!-- ==================== Balkan SMG T3 ========================== -->
+  
+	<ThingDef ParentName="ANLA_BaseMakeableGun">
+		<defName>Gun_BalkanSMG_ANLA</defName>
+		<label>balkan SMG</label>
+		<description>A semi-accurate firing submachine gun. Good at medium to short range, its very accurate at close range, however its not very damaging to armored targets.</description>
+		<graphicData>
+			<texPath>Weapons/SMGs/BalkanSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<generateCommonality>0.5</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>29000</WorkToMake>
+			<Mass>3.6</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.77</AccuracyShort>
+			<AccuracyMedium>0.54</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>87</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_BalkanSMG</defaultProjectile>
+				<warmupTime>0.98</warmupTime>
+				<range>25.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2.00</cooldownTime>
+      </li>
+    </tools>
+	    <weaponTags>
+		    <li>MercGunnerGun_ANLA</li>
+			<li>MercVetGun_ANLA</li>
+			<li>PirateOutlaw_ANLA</li>
+		</weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_BalkanSMG</defName>
+    <label>balkan SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+	  <stoppingPower>1.0</stoppingPower>
+      <speed>66</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Urban SMG T3 ========================== -->
+  
+	<ThingDef ParentName="ANLA_BaseMakeableGun">
+		<defName>Gun_UrbanSMG_ANLA</defName>
+		<label>urban SMG</label>
+		<description>A medium-caliber police submachine gun suited in urban combat or environments. It has short range, but handles quite well in mid-range having a good rate of fire and can punch flak armor.</description>
+		<graphicData>
+			<texPath>Weapons/SMGs/UrbanSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>3.8</Mass>
+			<AccuracyTouch>0.72</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_UrbanSMG</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>23.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.00</cooldownTime>
+      </li>
+    </tools>
+	    <weaponTags>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_UrbanSMG</defName>
+    <label>urban SMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+	  <stoppingPower>1.2</stoppingPower>
+	  <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>68</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tommy Gun T3 ========================== -->
+  
+	<ThingDef ParentName="ANLA_BaseMakeableGun">
+		<defName>Gun_TommyGun_ANLA</defName>
+		<label>tommy gun</label>
+		<description>A heavy caliber large-fed magazine submachine gun. It has medium range suited for mid-range firefights, fires five bullets in bursts. Was a favorite of mobsters &amp; gangsters that live in the urbworlds.</description>
+		<graphicData>
+			<texPath>Weapons/SMGs/TommyGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<generateCommonality>0.1</generateCommonality>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_SubmachineGunsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>4.3</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>97</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+    <verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ANLABullet_TommyGun</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>27.9</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+	  <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+    </tools>
+	    <weaponTags>
+			<li>MercVetGun_ANLA</li>
+			<li>TownMilitia_ANLA</li>
+		</weaponTags>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_SMG_ANLA</li>
+    </thingCategories>
+	</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_TommyGun</defName>
+    <label>tommy gun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.21</armorPenetrationBase>
+      <speed>73</speed>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

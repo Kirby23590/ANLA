@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Recurve Bow -->
+  <RecurveBow.label>bow making</RecurveBow.label>
+  <RecurveBow.description>Learn how to build and make bows such as the shortbow, the composite bow and the recurve bow which is a effective ranged weapon.\n\nAlso unlocks the bowyer's table for crafting bows and other ranged neolithic weapons.</RecurveBow.description>
+  
+  
+  <!-- EN: Smithing Description -->
+  <Smithing.description>Build smithies for crafting metal weapons like knives and dirks. And work and turn metal into clean, beautiful floor tiles</Smithing.description>
+  
+  
+  <!-- EN: Long Blades -->
+  <LongBlades.label>melee forging</LongBlades.label>
+  <LongBlades.description>Gain knowledge of the secrets of making blades, blunt instruments and polearms. Such as machetes and maces.</LongBlades.description>
+  
+  <!-- EN: Greatbows -->
+  <Greatbow.label>long &amp; heavy bows</Greatbow.label>
+  <Greatbow.description>Learn to craft and make longbows which have great range, or greatbows for killing medium armored enemies with heavy arrows.</Greatbow.description>
+  
+</LanguageData>

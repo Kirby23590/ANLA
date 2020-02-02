@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- //////////////////////////////////////////////////////////// Smithing -->
+
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName = "Smithing"]/researchViewX</xpath>
+        <value>
+          <researchViewX>1</researchViewX>
+        </value>
+    </Operation>
+	
+	<!-- //////////////////////////////////////////////////////////// Machining -->
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName = "Machining"]/prerequisites/li[text() = "Smithing"]</xpath>
+        <value>
+          <li>Resarch_BasicGunsmithing_ANLA</li>
+        </value>
+    </Operation>
+	
+	<!-- //////////////////////////////////////////////////////////// Shield Belts -->
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName = "ShieldBelt"]/prerequisites</xpath>
+        <value>
+          <li>Resarch_ShieldBeltsTierI_ANLA</li>
+        </value>
+    </Operation>
+	
+	<!-- //////////////////////////////////////////////////////////// Multibarreled weapons -->
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName = "MultibarrelWeapons"]/prerequisites</xpath>
+        <value>
+          <li>Resarch_MachineGunTierI_ANLA</li>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName = "MultibarrelWeapons"]</xpath>
+        <value>
+          <tab>Main_ANLA</tab>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName = "MultibarrelWeapons"]/researchViewX</xpath>
+        <value>
+          <researchViewX>5</researchViewX>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName = "MultibarrelWeapons"]/researchViewY</xpath>
+        <value>
+          <researchViewY>1.8</researchViewY>
+        </value>
+    </Operation>
+	
+</Patch>

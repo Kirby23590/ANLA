@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////// Proper Shotgun Patches -->
+
+<!-- ///////////////////////////////// Shotgun Pellets -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="ANLABullet_DoubleBarrelShotgun"]</xpath>
+        <value>
+            <li Class="ProperShotguns.ShotgunExtension">
+                <pelletCount>10</pelletCount>
+            </li>
+        </value>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="ANLABullet_BlunderbussShotgun" or defName="ANLABullet_BurstShotgun"]</xpath>
+        <value>
+            <li Class="ProperShotguns.ShotgunExtension">
+                <pelletCount>7</pelletCount>
+            </li>
+        </value>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="ANLABullet_TacticalShotgun" or defName="ANLABullet_CombatShotgun" or defName="ANLABullet_RiotShotgun"]</xpath>
+        <value>
+            <li Class="ProperShotguns.ShotgunExtension">
+                <pelletCount>6</pelletCount>
+            </li>
+        </value>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="ANLABullet_SawedOffShotgun" or defName="ANLABullet_LeverShotgun" or defName="ANLABullet_SemiAutoShotgun" or defName="ANLABullet_AssaultShotgun"]</xpath>
+        <value>
+            <li Class="ProperShotguns.ShotgunExtension">
+                <pelletCount>5</pelletCount>
+            </li>
+        </value>
+    </match>
+</Operation>
+
+<!-- ///////////////////////////////// Shotgun Bullet Sprites -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ANLABullet_BlunderbussShotgun" or defName="ANLABullet_SawedOffShotgun" or defName="ANLABullet_TacticalShotgun" or defName="ANLABullet_LeverShotgun" or defName="ANLABullet_SemiAutoShotgun" or defName="ANLABullet_CombatShotgun" or defName="ANLABullet_RiotShotgun" or defName="ANLABullet_DoubleBarrelShotgun" or defName="ANLABullet_BurstShotgun" or defName="ANLABullet_AssaultShotgun"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+        </value>
+    </match>
+</Operation>
+
+<!-- ///////////////////////////////// Shotgun Damages -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ANLABullet_CombatShotgun"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>30</damageAmountBase>
+        </value>
+    </match>
+</Operation>
+
+<!-- ///////////////////////////////// Shotgun Rain and Hobos with Shotguns -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_BlunderbussShotgun_ANLA" or defName="Gun_SawedOffShotgun_ANLA" or defName="Gun_TacticalShotgun_ANLA" or defName="Gun_LeverShotgun_ANLA" or defName="Gun_SemiAutoShotgun_ANLA" or defName="Gun_CombatShotgun_ANLA" or defName="Gun_RiotShotgun_ANLA" or defName="Gun_DoubleBarrelShotgun_ANLA" or defName="Gun_BurstShotgun_ANLA" or defName="Gun_AssaultShotgun_ANLA"]/verbs/li/verbClass</xpath>
+        <value>
+            <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
+        </value>
+    </match>
+</Operation>
+	
+</Patch>

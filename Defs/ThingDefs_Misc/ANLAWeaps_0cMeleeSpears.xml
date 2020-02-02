@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Guisarme_ANLA</defName>
+    <label>guisarme</label>
+    <description>A crude slashing militia weapon. Has jagged spikes around the head and has poor armor penetration. The it was made and created by peasants and poor farmers during revolts against their lords in medieval worlds.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/Guisarme</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>VilagerWeap_ANLA</li>
+    </weaponTags>
+    <costStuffCount>60</costStuffCount>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-36</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>spearhead</label>
+        <capacities>
+          <li>Stab</li>
+		  <li>Cut</li>
+        </capacities>
+        <power>12.5</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeSpearTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Polearms_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_FlemishSpike_ANLA</defName>
+    <label>flemish spike</label>
+    <description>An medieval staff or polearm with a spike at the end. While essentially a short pike, however its also a club &amp; can also be used as a blunt weapon because of the weighted knob holding the spike.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/FlemishSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <WorkToMake>15200</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-37</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.2</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+	  <li>
+        <label>knob</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13.5</power>
+        <cooldownTime>2.15</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <armorPenetration>0.25</armorPenetration>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeSpearTierI_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Polearms_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_HopliteSpear_ANLA</defName>
+    <label>hoplite spear</label>
+    <description>An ancient spear used in ancient greek warfare that was used by hoplites &amp; heavy infantry. A versatile spear with a spike below in the rear for quick attacks &amp; has good armor penetration.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/HopliteSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>85</costStuffCount>
+    <statBases>
+      <WorkToMake>17500</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-30</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>19.5</power>
+        <armorPenetration>0.50</armorPenetration>
+        <cooldownTime>2.65</cooldownTime>
+      </li>
+	  <li>
+        <label>butt-spike</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>13.5</power>
+        <cooldownTime>2.25</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Polearms_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Bident_ANLA</defName>
+    <label>bident</label>
+    <description>A neolithic two-pronged polearm. A tool rather meant to be used in spear-fishing or hunting small mammals. It has high armor penetration but is slow to attack with both points.\n\nPrimitive but effective if both prongs connect.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/Bident</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <costStuffCount>95</costStuffCount>
+    <statBases>
+      <WorkToMake>19700</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-28</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.5</power>
+        <cooldownTime>1.87</cooldownTime>
+      </li>
+      <li>
+        <label>single point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14.5</power>
+        <armorPenetration>0.20</armorPenetration>
+        <cooldownTime>2.57</cooldownTime>
+      </li>
+	  <li>
+        <label>both points</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25.5</power>
+        <armorPenetration>0.70</armorPenetration>
+        <cooldownTime>3.0</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Polearms_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_WingedSpear_ANLA</defName>
+    <label>winged spear</label>
+    <description>An ancient lugged spear of the vikings. The spear has two lugs also called wings bellow the head of the spear hence the name, the wings can be used to parry attacks.\n\nIt has strong armor penetration but is slow to attack with.</description>
+    <graphicData>
+      <texPath>Weapons/Melee/WingSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>MeleeEliteSlasher_ANLA</li>
+    </weaponTags>
+    <costStuffCount>115</costStuffCount>
+    <statBases>
+      <WorkToMake>21500</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-35</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.4</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>spearhead</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+		<armorPenetration>0.65</armorPenetration>
+        <cooldownTime>2.77</cooldownTime>
+      </li>
+	  <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.95</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>Resarch_MeleeBladeAndSpearsTierII_ANLA</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsMelee_Polearms_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+
+
+</Defs>

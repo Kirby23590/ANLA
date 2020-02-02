@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Tier 2: Modernization ===================================-->
+
+  <!--===== Column 1 ====-->
+  
+  <ResearchProjectDef>
+	<defName>Resarch_SniperTierI_ANLA</defName>
+	<label>telescopic sights</label>
+	<description>Learn to make telescopic sights to create sniper rifles, which allows for shooting from a far distance for hunting and sniping.</description>
+	<baseCost>750</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>3</researchViewX>
+	<researchViewY>0.6</researchViewY>
+	<prerequisites>
+      <li>Resarch_RiflesTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  
+  
+  <ResearchProjectDef>
+	<defName>Resarch_RiflesTierI_ANLA</defName>
+	<label>improved rifling</label>
+	<description>Learn to make use of improved barrel, increasing damage and range to build new types of rifles that you can build such as bolt-action rifles.</description>
+	<baseCost>700</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>2</researchViewX>
+	<researchViewY>1.2</researchViewY>
+	<prerequisites>
+      <li>Resarch_GunsTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_SubmachineGunsTierI_ANLA</defName>
+	<label>delayed blowback</label>
+	<description>Make more improved and stronger automatic firearms for submachine guns and for other firearms by using delayed blowback.</description>
+	<baseCost>700</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>2</researchViewX>
+	<researchViewY>1.8</researchViewY>
+	<prerequisites>
+	  <li>BlowbackOperation</li>
+      <li>Resarch_GunsTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>Resarch_HandgunsTierI_ANLA</defName>
+    <label>magnum cartridges</label>
+    <description>Learn to create magnum cartridges which has high damage &amp; good armor penetration.</description>
+    <baseCost>500</baseCost>
+	<tab>Main_ANLA</tab>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.4</researchViewY>
+	<prerequisites>
+      <li>Resarch_GunsTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_ShotgunsTierI_ANLA</defName>
+	<label>semi-auto shotguns</label>
+	<description>Learn how to make semi-automatic and powerful shotguns using recoil operation in the modern gunsmith's table.</description>
+	<baseCost>800</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>3</researchViewX>
+	<researchViewY>2.4</researchViewY>
+	<prerequisites>
+      <li>BlowbackOperation</li>
+	  <li>Resarch_GunsTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  
+  
+  <ResearchProjectDef>
+	<defName>Resarch_GrenadesTierI_ANLA</defName>
+	<label>hand grenades</label>
+	<description>Learn how to craft grenades such as anti-personnel frag grenades and molotov cocktails in the machining table.</description>
+	<baseCost>600</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>1</researchViewX>
+	<researchViewY>3.6</researchViewY>
+  </ResearchProjectDef>
+    
+  <ResearchProjectDef>
+	<defName>Resarch_ExplosivesRangedTierI_ANLA</defName>
+	<label>ranged explosives</label>
+	<description>Learn how to craft ranged explosives in the machining table such as flare guns with explosive flares and incendiary launchers.</description>
+	<baseCost>1200</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>2</researchViewX>
+	<researchViewY>3.0</researchViewY>
+	<prerequisites>
+      <li>Resarch_GunsTierI_ANLA</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  
+  
+  <ResearchProjectDef>
+	<defName>Resarch_ShieldBeltsTierI_ANLA</defName>
+	<label>chemfuel shield belts</label>
+	<description>Allows you build simple shield belts which are powered by chemfuel batteries.\n\nIt's weaker than regular shield belts, but is better than having no energy shield to block ranged projectiles.</description>
+	<baseCost>700</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>1</researchViewX>
+	<researchViewY>0.0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_ThrowingWeaponsTierI_ANLA</defName>
+	<label>throwing weapons</label>
+	<description>Construct even more deadlier throwing weapons in the smithy such as atatls and the pila.\n\nThrowing harpoons requires long blades &amp; spears research.</description>
+	<baseCost>400</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>0</researchViewX>
+	<researchViewY>3.3</researchViewY>
+	<prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  
+  
+  <ResearchProjectDef>
+	<defName>Resarch_MeleeBladeTierI_ANLA</defName>
+	<label>fine blades</label>
+	<description>Make more durable blades for swords and other bladed weapons such as knives in the smithy.</description>
+	<baseCost>250</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>0</researchViewX>
+	<researchViewY>4.2</researchViewY>
+	<prerequisites>
+      <li>LongBlades</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_MeleeBluntTierI_ANLA</defName>
+	<label>blunt instruments</label>
+	<description>Learn to make stronger blunt weapons which deals blunt damage that can be used for non-lethal or highly lethal beatdowns.</description>
+	<baseCost>250</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>0</researchViewX>
+	<researchViewY>4.7</researchViewY>
+	<prerequisites>
+      <li>LongBlades</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>Resarch_MeleeSpearTierI_ANLA</defName>
+	<label>sharpened polearms</label>
+	<description>Make sharp-tipped polearms, such as spears which can have high-armor penetration attacks with their pointy spearheads.</description>
+	<baseCost>250</baseCost>
+	<techLevel>Industrial</techLevel>
+	<tab>Main_ANLA</tab>
+	<researchViewX>0</researchViewX>
+	<researchViewY>5.2</researchViewY>
+	<prerequisites>
+      <li>LongBlades</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</Defs>

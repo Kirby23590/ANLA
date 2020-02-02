@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////// Proper Shotgun Patches -->
+
+<!-- ///////////////////////////////// Scatter Blasts -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="ANLABullet_ChargeScatterer"]</xpath>
+        <value>
+            <li Class="ProperShotguns.ShotgunExtension">
+                <pelletCount>6</pelletCount>
+            </li>
+        </value>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ANLABullet_ChargeScatterer"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>40</damageAmountBase>
+        </value>
+    </match>
+</Operation>
+
+<!-- ///////////////////////////////// Scatter Sprites -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ANLABullet_ChargeScatterer"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Projectile/ChargeLanceShot</texPath>
+        </value>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ANLABullet_ChargeScatterer"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>1.1</drawSize>
+        </value>
+    </match>
+</Operation>
+
+<!-- ///////////////////////////////// *Mechanical Laugher* -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>[XND] Proper Shotguns</li>
+    </mods>
+	<match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeScatterer_ANLA"]/verbs/li/verbClass</xpath>
+        <value>
+            <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
+        </value>
+    </match>
+</Operation>
+
+</Patch>

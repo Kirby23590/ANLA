@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>Gun_MiniInfernoCannon_ANLA</defName>
+    <label>inferno mini-launcher</label>
+    <description>A mini heavy incendiary-shot launcher device, built for sentinels and medium-sized mechanoids. It fires an incendiary grenade that explodes in impact.</description>
+    <graphicData>
+      <texPath>Weapons/MechanoidWeapons/MiniInfernoCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>15</Mass>
+      <RangedWeapon_Cooldown>6.8</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <menuHidden>True</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <generateCommonality>0.5</generateCommonality>
+    <tradeability>None</tradeability>
+    <weaponTags>
+      <li>MechanoidGunMedium</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLABullet_InfernoCannonMini</defaultProjectile>
+        <forcedMissRadius>3.5</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+        <warmupTime>1.25</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ANLAShot_GrenadeLauncher</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+		<targetParams>
+			<canTargetLocations>true</canTargetLocations> <!-- So What the Hack!? Sentinels can Attack Ground, Useful! -->
+		</targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10.5</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ANLABullet_InfernoCannonMini</defName>
+    <label>inferno launcher shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/InfernoCannonShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <!-- Use default damage from explosion def -->
+      <speed>45</speed>
+      <explosionRadius>1.8</explosionRadius >
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.27</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+</Defs>

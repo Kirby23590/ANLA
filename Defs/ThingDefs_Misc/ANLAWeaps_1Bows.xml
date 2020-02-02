@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Tier 0 / Budget Bows ================= -->
+  
+  <!-- ==================== Basic Bow T0 ========================= -->
+
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Bow_Basic_ANLA</defName>
+    <label>basic bow</label>
+    <description>A improvised basic and simple made selfbow crafted with a few materials. Lacks quality and is simple to make, primarily used for hunting in the wilds other than combat.</description>
+    <graphicData>
+      <texPath>Weapons/Bows/BowBasic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costList>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>2400</WorkToMake>
+      <Mass>0.8</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+		<li>BowyerBench_ANLA</li>
+      </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLAArrow_Basic</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>25.9</range>
+        <soundCast>Bow_Small</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Bows_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ANLAArrow_Basic</defName>
+    <label>basic bow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 1 Bows ========================== -->
+
+  <!-- ==================== Composite Bow T1 ========================= -->
+  
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Bow_Composite_ANLA</defName>
+    <label>composite bow</label>
+    <description>A quick firing bow constructed with special talent despite it being primitive. It's faster to draw and fire and is slightly more damaging than a shortbow, however it has less range.</description>
+    <graphicData>
+      <texPath>Weapons/Bows/BowComposite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costList>
+      <WoodLog>45</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>2400</WorkToMake>
+      <Mass>0.8</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.61</AccuracyShort>
+      <AccuracyMedium>0.38</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>BowyerBench_ANLA</li>
+      </recipeUsers>
+	  <researchPrerequisite>RecurveBow</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLAArrow_Composite</defaultProjectile>
+        <warmupTime>0.88</warmupTime>
+        <range>24.9</range>
+        <soundCast>Bow_Small</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.2</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Bows_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ANLAArrow_Composite</defName>
+    <label>composite bow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+	  <stoppingPower>0.8</stoppingPower>
+      <speed>52</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ==================== Tier 2 Bows ========================== -->
+
+  <!-- ==================== Long Bow T2 ========================= -->
+  
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Bow_Longbow_ANLA</defName>
+    <label>longbow</label>
+    <description>A long-ranged bow used by experienced archers and yeomen rangers, crafted with skill despite it looking as it was simple made. Fires arrows from longer and greater distances than the greatbow, but deals less damage.</description>
+    <graphicData>
+      <texPath>Weapons/Bows/BowLong</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.77</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedDecent</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ANLAArrow_Longbow</defaultProjectile>
+        <warmupTime>1.6</warmupTime>
+        <range>35.9</range>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+	  <recipeUsers>
+        <li>BowyerBench_ANLA</li>
+      </recipeUsers>
+      <researchPrerequisite>Greatbow</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>WeaponsRanged_Bows_ANLA</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ANLAArrow_Longbow</defName>
+    <label>longbow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+      <speed>56</speed>
+    </projectile>
+  </ThingDef>
+  
+</Defs>
+
+

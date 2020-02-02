@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>Crush_Weapon_ANLA</defName>
+    <label>crush</label>
+    <labelNoun>a crush wound</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>mangled scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.03</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Crushed</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>Cut_Axe_ANLA</defName>
+    <label>cut</label>
+    <labelNoun>a deep cut</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>cut scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0120</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.08</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Chopped off</destroyedLabel>
+      <destroyedOutLabel>Chopped out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+</Defs>
